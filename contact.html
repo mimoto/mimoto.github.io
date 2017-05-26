@@ -43,4 +43,15 @@ tab_order: 7
     </article>
         <article>
            <h6>Existing customers can use our ticketing system to contact us.</h6>
+	   <button id="feedback-form">Feedback</button>
+        <script id="zammad_form_script" src="https://mimoto.zammad.com/assets/form/form.js"></script>
+        <script>
+            $(function() {
+                $('#feedback-form').ZammadForm({
+                    messageTitle: 'Feedback Form',
+                    messageSubmit: 'Submit',
+                    messageThankYou: 'Thank you, we\'ll contact you as soon as possible. Ticket number: (#%s)'
+                });
+            });
+        </script>
     </article>

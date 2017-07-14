@@ -5,53 +5,17 @@ permalink: /contact/
 tab_order: 7
 ---
 
-	   <article>
-           <h6>New customers can contact us by using the form below (please use the from below):</h6>
-           <form class="form-horizontal" action="mailto:pete@mimoto.co.uk" method="post" enctype="text/plain" >
-               <fieldset>
+<button id="feedback-form">Feedback</button>
 
-                    <!-- Form Name -->
-                   <legend></legend>
+<script id="zammad_form_script" src="https://mimoto.zammad.com/assets/form/form.js"></script>
 
-                   <!-- Text input-->
-                   <div class="form-group">
-                       <label class="col-md-4 control-label" for="textinput">Your Name:</label>  
-                       <div class="col-md-4"><input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required=""></div>
-                   </div>
-
-                   <!-- Text input-->
-                   <div class="form-group">
-                       <label class="col-md-4 control-label" for="textinput">Your Email:</label>  
-                       <div class="col-md-4"><input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required=""></div>
-                   </div>
-
-                   <!-- Text input-->
-                   <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Your Subject</label>  
-                        <div class="col-md-4"><input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md"></div>
-                   </div>
-
-                   <!-- Textarea -->
-                   <div class="form-group">
-                        <label class="col-md-4 control-label" for="Your Request">Your Request</label>
-                        <div class="col-md-4"><textarea class="form-control" id="Your Request" name="Your Request"></textarea></div>
-                   </div>
-                </fieldset>
-               <input type="submit" name="submit" value="Submit" />
-           </form>           
-           
-    </article>
-        <article>
-           <h6>Existing customers can use our ticketing system to contact us.</h6>
-	   <button id="feedback-form">Feedback</button>
-        <script id="zammad_form_script" src="https://mimoto.zammad.com/assets/form/form.js"></script>
-        <script>
-            $(function() {
-                $('#feedback-form').ZammadForm({
-                    messageTitle: 'Feedback Form',
-                    messageSubmit: 'Submit',
-                    messageThankYou: 'Thank you, we\'ll contact you as soon as possible. Ticket number: (#%s)'
-                });
-            });
-        </script>
-    </article>
+<script>
+    $(function() {
+        $('#feedback-form').ZammadForm({
+            messageTitle: 'How can we help you?',
+            messageSubmit: 'Send',
+            messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
+            showTitle: true
+        });
+    });
+</script>

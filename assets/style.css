@@ -182,14 +182,12 @@ article img { float: left; margin-right: 15px; border: 1px solid #e56b14; width:
 opacity: 1;
  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
 -webkit-filter: grayscale(0%);
--ms-filter: grayscale(0%); -o-filter: grayscale(0%);
-filter: 0;
 -webkit-filter: grayscale(0);
 }
 
 
     /****** FOOTER **********/
-footer h3 { font-size: 36px; margin-bottom: 30px; }
+footer h3 { font-size: 36px; margin-bottom: 30px;
 	max-width: 170px!important;
 	float: left!important;
 }
@@ -199,63 +197,94 @@ footer h3 { font-size: 36px; margin-bottom: 30px; }
 and (min-width : 768px)
 and (max-width : 979px) {
 
-#wrap { margin-top:130px;}
+    #wrap {
+        margin-top: 130px;
+    }
+
+    #nav-main {
+        position: absolute;
+        left: 50%;
+        width: 750px;
+        margin-left: -375px !important;
+        top: 100px;
+    }
+
+    .navbar .nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-collapse .nav > li {
+        float: none !important;
+        display: inline-block;
+    }
+
+    .navbar .nav > li > a {
+        font-size: 17px;
+        padding: 15px 20px;
+    }
+
+    #contact .span2 {
+        font-size: 12px;
+    }
+
+    #contact i {
+        font-size: 40px;
+    }
+
+    /* Tablets & iPads (landscape) ----------- */
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape) {
+    }
 
 
-#nav-main {
-position: absolute;
-left: 50%;
-width: 750px;
-margin-left: -375px!important;
-top: 100px;
+    /* Tablets & iPads (portrait) ----------- */
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+
+        body {
+            overflow-x: hidden;
+        }
+    }
+
+
+    /* Older Desktops and laptops only ----------- */
+    @media only screen
+    and (min-width: 980px)
+    and (max-width: 1280px) {
+
+        .navbar .nav > li > a {
+            padding: 15px 15px;
+            font-size: 16px;
+        }
+
+    }
+
+    /* Newer Desktops and laptops ----------- */
+    .page-header h1, .navbar-brand {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .page-header {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+
+    /*reduce bottom margin to rapproche menu*/
+}}}
+
+form.zammad-form {
+    background-color: white;
+
 }
-        
-.navbar .nav {text-align: center; width:100%;}
 
-.nav-collapse .nav>li {
-float: none!important;
-display: inline-block;
+button#feedback-form {
+    color: white;
+    background-color: white;
+    padding: 10px;
 }
-
-.navbar .nav > li > a {font-size: 17px; padding:15px 20px;}
-
-#contact .span2 {font-size: 12px;}
-
-#contact i {font-size: 40px;}
-
-/* Tablets & iPads (landscape) ----------- */
- @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-}
-
-
-/* Tablets & iPads (portrait) ----------- */
- @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-
-body {
-overflow-x:hidden;
-}
-}
-
-
-/* Older Desktops and laptops only ----------- */
- @media only screen
-and (min-width: 980px)
-and (max-width : 1280px) {
-
-.navbar .nav > li > a {
-padding: 15px 15px;
-font-size: 16px;
-}
-
-}
-
-/* Newer Desktops and laptops ----------- */
-
-.page-header h1, .navbar-brand { font-weight: bold; font-size: 16px;  }
-.page-header {  border-bottom: none; margin-bottom: 0px; /*reduce bottom margin to rapproche menu*/}

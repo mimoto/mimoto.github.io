@@ -33,4 +33,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-
+collections:
+  scenarios:
+    output: true
+    permalink: /:collection/:name

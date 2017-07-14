@@ -28,7 +28,7 @@ nav .container-fluid {	margin-top: 0px; background: none; border: none; height: 
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner { -webkit-box-shadow: none !important; -moz-box-shadow: none; box-shadow: none; border:0px; background:none; }
 
-.navbar .nav { position: relative; left: 0; top: 60px; display: block; float: left; margin: 0 10px 0 0; }
+.navbar .nav { position: relative; left: 0;  display: block; float: left; margin: 0 10px 0 0; }
 
 .navbar .nav > li > a { float: none; padding: 15px 15px; color: #999999 !important; text-decoration: none !important; text-shadow: none;  font-weight: normal; font-size: 20px; letter-spacing: .15em; }
 
@@ -287,4 +287,12 @@ button#feedback-form {
     color: white;
     background-color: white;
     padding: 10px;
+    position: absolute;
+    top: 5px;
+}
+
+#nav_logo {
+ height: 50px;
+    margin: 0px;
+    padding 0px;
 }

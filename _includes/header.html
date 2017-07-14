@@ -8,28 +8,31 @@
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}" title="Mimoto"><img  src="{{ "/assets/images/mimoto.png" | relative_url }}" /> </a>
+        <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}" title="Mimoto"><img id="nav_logo" src="{{ "/assets/images/mimoto.png" | relative_url }}" /> </a>
+
       </div><!-- /.navbar header -->
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="mimoto-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <div class="collapse navbar-collapse" id="mimoto-navbar-collapse-1">
+            <ul class="nav navbar-nav">
 
-            {% assign sorted_pages = site.pages | sort:"tab_order"  %}
+                {% assign sorted_pages = site.pages | sort:"tab_order"  %}
 
-            {% for page_tab in sorted_pages %}
+                {% for page_tab in sorted_pages %}
 
-                {% if page.path == page_tab.path %}
-                  <li class="active menuitem"><a href="{{ site.baseurl }}{{ page_tab.permalink }}">{{ page_tab.title }} <span class="sr-only">(current)</span></a></li>
-                {% else %}
-                  <li class="menuitem"><a href="{{ site.baseurl }}{{ page_tab.permalink }}">{{ page_tab.title }} </a></li>
-                {% endif %}
+                    {% if page_tab.tab_active == true %}
 
-            {% endfor %}
+                        {% if page.path == page_tab.path %}
+                          <li class="active menuitem"><a href="{{ site.baseurl }}{{ page_tab.permalink }}">{{ page_tab.title }} <span class="sr-only">(current)</span></a></li>
+                        {% else %}
+                          <li class="menuitem"><a href="{{ site.baseurl }}{{ page_tab.permalink }}">{{ page_tab.title }} </a></li>
+                        {% endif %}
 
+                    {% endif %}
 
-        </ul>
-      </div><!-- /.navbar-collapse -->
+                {% endfor %}
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav><!--------------------------------------------------end NAV BAR---------------------------------------------------------------->
-

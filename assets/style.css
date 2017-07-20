@@ -9,7 +9,7 @@ Version:	1.3.8
 
 /*************** GENERAL ***********************/
 
-body, a, div, h1, h2, h3, h4, p { background: #ffffff; color: #999999; line-height: 25px; text-align: justify; font-weight: normal; font-size: 30px; font-family: 'Open-Sans', Arial, sans-serif; line-height: 1.3em; }
+body, a, div, h1, h2, h3, h4, p { background: #ffffff; color: #999999; line-height: 25px; text-align: justify; font-weight: normal; font-size: 16px; font-family: 'Open-Sans', Arial, sans-serif; line-height: 1.3em; }
 
 .container, .container-fluid {	margin-top: 0px; }
 
@@ -281,6 +281,10 @@ and (max-width : 979px) {
 form.zammad-form {
     background-color: white;
 
+}
+
+h2 {
+    font-size: 18px !important;
 }
 
 button#feedback-form {

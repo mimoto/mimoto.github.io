@@ -8,19 +8,17 @@ tab_active: true
 <main>
     
     <article>
-        <h1><a name="itsupport"></a>We are An IT Support Company</h1><!--<h1>We are</h1><!--<h6>... an IT support services company...</h6>-->
-        <p><img src="assets/images/mobilewheat.jpg" style="float: right; width: 40%; height: auto; border-radius: 15px; margin-left: 15px; border: 2px solid #e56b14; " />We specialise in identity management and in particular
-            <span class="emphasis">Shibboleth</span> and <span class="emphasis">SAML</span>. The world of
-            federated identity presents tough challenges for most IT organisations, a radically different authentication
-            and authorisation model can present problems for traditional IT teams. SAML2 enables integration with
-            cloud-based services and academic resources in a highly customisable, secure, way. But a cost of that is
-            complication and not every institution is able to justify a dedicated team for this services; this is where
-            we can help.</p>
+        {% capture my_include %}{% include blurb/intro.markdown %}{% endcapture %}
+        {{ my_include | markdownify }}
     </article>
-    <p><a href="#itpartners">Our Partners</a> | ...</p>
+
     <article>
-        <h1><a name="itpartners"></a>We are Experienced and Professional IT Partners</h1>
-        <p>A list of partners including <span class="emphasis">Digital Identity</span>, their credentials and contributions...</p>
+        {% include blurb/partners.html %}
     </article>
+
+    <article>
+        {% include blurb/customers.html %}
+    </article>
+
 </main>
 

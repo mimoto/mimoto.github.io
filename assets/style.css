@@ -284,15 +284,37 @@ form.zammad-form {
 }
 
 button#feedback-form {
+    display: block;
     color: white;
     background-color: white;
     padding: 10px;
-    position: absolute;
-    top: 5px;
+    margin-top: 60px;
 }
 
 #nav_logo {
- height: 50px;
+    height: 50px;
     margin: 0px;
-    padding 0px;
+    padding: 0px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+
+.navbar {
+    max-width: 840px;
+}
+
+.navbar-header {
+    padding-left: 93px;
+}
+
+main {
+    margin-top: 12px;
+    margin-left: 10px;
+    max-width: 800px;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 24px;
 }

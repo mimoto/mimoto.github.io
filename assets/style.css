@@ -280,8 +280,15 @@ and (max-width : 979px) {
 
 form.zammad-form {
     background-color: white;
-
+    min-width: 320px;
+    width: 50%
 }
+
+button.zammad-form {
+    font-size: 24px;
+}
+
+
 
 h2 {
     font-size: 18px !important;
@@ -312,6 +319,10 @@ button#feedback-form {
     padding-left: 93px;
 }
 
+.container {
+    min-width: 400px;
+}
+
 main {
     margin-top: 12px;
     margin-left: 10px;
@@ -321,4 +332,8 @@ main {
 main p {
     font-size: 18px;
     line-height: 24px;
+}
+
+h2.zammad-form {
+    color: #000000;
 }

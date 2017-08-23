@@ -6,17 +6,66 @@ tab_order: 7
 tab_active: true
 ---
 
-<button id="feedback-form">Feedback</button>
+<div class="container-fluid">
 
-<script id="zammad_form_script" src="https://mimoto.zammad.com/assets/form/form.js"></script>
+    <div class="row">
 
-<script>
-    $(function() {
-        $('#feedback-form').ZammadForm({
-            messageTitle: 'How can we help you?',
-            messageSubmit: 'Send',
-            messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
-            showTitle: true
-        });
-    });
-</script>
+
+        <div class="col-md-4 ">
+            <div id="contact_details" >
+                <h2>Contact Mimoto</h2>
+                <hr/>
+
+                <dl>
+                    <dt><span class="glyphicon  glyphicon-inbox" aria-hidden="true"></span> By Email</dt>
+                    <dd><a href="mailto:info@mimoto.co.uk">info@mimoto.co.uk</a></dd>
+
+                    <dt><span class="glyphicon  glyphicon-envelope" aria-hidden="true"></span> By Post</dt>
+                    <dd>
+                        <address>
+                            7 James Brindley Basin<br/>
+                            Manchester<br/>
+                            M1 2NL<br/>
+                        </address>
+                    </dd>
+
+                    <dt><span class="glyphicon  glyphicon-earphone" aria-hidden="true"></span> By Phone</dt>
+                    <dd><a href="tel:+447967 215 499">07967215499</a></dd>
+
+                </dl>
+
+
+            </div>
+        </div>
+
+
+        <div class="col-md-5 col-md-offset-2">
+
+            <div id="embedded_zammad_form" class="pull-right" >
+                <button id="feedback-form">Feedback</button>
+
+                <script id="zammad_form_script" src="https://mimoto.zammad.com/assets/form/form.js"></script>
+
+                <script>
+                    $(function() {
+                        $('#feedback-form').ZammadForm({
+                            messageTitle: 'How can we help you?',
+                            messageSubmit: 'Send',
+                            messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
+                            showTitle: true
+                        });
+                    });
+                </script>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<br/>

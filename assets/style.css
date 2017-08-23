@@ -299,7 +299,7 @@ button#feedback-form {
     color: white;
     background-color: white;
     padding: 10px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 #nav_logo {
@@ -337,6 +337,10 @@ main p {
 h2.zammad-form {
     color: #000000;
 
+}
+
+form.zammad-form button.btn {
+    font-size: 18px;
 }
 
 #contact_details dd {

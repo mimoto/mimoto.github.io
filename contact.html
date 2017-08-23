@@ -7,14 +7,21 @@ tab_active: true
 ---
 
 <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 ">
+            <h2>Contact Mimoto</h2>
+            <hr/>
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+        </div>
+    </div>
+
 
     <div class="row">
 
-
         <div class="col-md-4 ">
-            <div id="contact_details" >
-                <h2>Contact Mimoto</h2>
-                <hr/>
+            <div id="contact_details">
+
 
                 <dl>
                     <dt><span class="glyphicon  glyphicon-inbox" aria-hidden="true"></span> By Email</dt>
@@ -41,31 +48,35 @@ tab_active: true
 
         <div class="col-md-5 col-md-offset-2">
 
-            <div id="embedded_zammad_form" class="pull-right" >
-                <button id="feedback-form">Feedback</button>
+            <div id="embedded_zammad_form" >
+                <dl>
+                    <dt><span class="glyphicon glyphicon glyphicon-comment" aria-hidden="true"></span> Or raise a
+                        support ticket
+                    </dt>
+                    <dd>
+                        <button id="feedback-form">Feedback</button>
 
-                <script id="zammad_form_script" src="https://mimoto.zammad.com/assets/form/form.js"></script>
+                        <script id="zammad_form_script" src="https://mimoto.zammad.com/assets/form/form.js"></script>
 
-                <script>
-                    $(function() {
-                        $('#feedback-form').ZammadForm({
-                            messageTitle: 'How can we help you?',
-                            messageSubmit: 'Send',
-                            messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
-                            showTitle: true
-                        });
-                    });
-                </script>
+                        <script>
+                            $(function () {
+                                $('#feedback-form').ZammadForm({
+                                    messageTitle: 'How can we help you?',
+                                    messageSubmit: 'Send',
+                                    messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
+                                    showTitle: true
+                                });
+                            });
+                        </script>
+                    </dd>
+                </dl>
             </div>
+
 
         </div>
     </div>
 
 </div>
-
-
-
-
 
 
 <br/>

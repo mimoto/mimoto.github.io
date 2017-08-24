@@ -91,7 +91,7 @@ main nav li::before    { content: "-"; color: #e56b14; display: inline-block; wi
 
 article            { margin-top: 100px; font-family: 'Open-Sans', Arial, sans-serif; }
 /*article h1         { color: #e56b14; font-size: 2.5em; font-weight: 600; line-height: .8em; }*/
-article h2         { color: #999999; font-size: 2em; font-weight: 600; line-height: .8em; }
+article h2         { color: #e56b14; font-size: 2em; font-weight: 600; line-height: .8em; }
 article h6         { color: #e56b14; text-align: left; font-size: 1em; font-weight: 200; padding: 10px 0px; border-top: 1px solid #dddddd; border-bottom: 1px solid #e56b14; }
 article p          { text-align: justify; background: #ffffff; color: #999999; line-height: 20px; text-align: left; font-weight: 200; font-size: 1em;  border: none;
                      padding: 0px;  margin: 20px 0px 10px 0px; letter-spacing: 2px; }
@@ -349,4 +349,14 @@ form.zammad-form button.btn {
 
 #embedded_zammad_form {
 
+}
+
+article.blogpost_summary h2 a:link, article.blogpost_summary h2 a:visited, article.blogpost_summary h2 .blogpost_summary a:hover, article.blogpost_summary h2  a:active {
+    color: #e56b14; font-size: 1.4em; font-weight: normal; line-height: .8em; border-bottom: 2px solid #e56b14;
+    text-decoration: none;
+}
+
+article.blogpost_article h1 {
+    color: #e56b14; font-size: 1.4em; font-weight: normal; line-height: .8em; border-bottom: 2px solid #e56b14;
+    text-decoration: none;
 }

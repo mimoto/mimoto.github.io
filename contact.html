@@ -6,17 +6,77 @@ tab_order: 7
 tab_active: true
 ---
 
-<button id="feedback-form">Feedback</button>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 ">
+            <h2>Contact Mimoto</h2>
+            <hr/>
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+        </div>
+    </div>
 
-<script id="zammad_form_script" src="https://mimoto.zammad.com/assets/form/form.js"></script>
 
-<script>
-    $(function() {
-        $('#feedback-form').ZammadForm({
-            messageTitle: 'How can we help you?',
-            messageSubmit: 'Send',
-            messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
-            showTitle: true
-        });
-    });
-</script>
+    <div class="row">
+
+        <div class="col-md-4 ">
+            <div id="contact_details">
+
+
+                <dl>
+                    <dt><span class="glyphicon  glyphicon-inbox" aria-hidden="true"></span> By Email</dt>
+                    <dd><a href="mailto:info@mimoto.co.uk">info@mimoto.co.uk</a></dd>
+
+                    <dt><span class="glyphicon  glyphicon-envelope" aria-hidden="true"></span> By Post</dt>
+                    <dd>
+                        <address>
+                            7 James Brindley Basin<br/>
+                            Manchester<br/>
+                            M1 2NL<br/>
+                        </address>
+                    </dd>
+
+                    <dt><span class="glyphicon  glyphicon-earphone" aria-hidden="true"></span> By Phone</dt>
+                    <dd><a href="tel:+447967 215 499">07967215499</a></dd>
+
+                </dl>
+
+
+            </div>
+        </div>
+
+
+        <div class="col-md-5 col-md-offset-2">
+
+            <div id="embedded_zammad_form" >
+                <dl>
+                    <dt><span class="glyphicon glyphicon glyphicon-comment" aria-hidden="true"></span> Or raise a
+                        support ticket
+                    </dt>
+                    <dd>
+                        <button id="feedback-form">Feedback</button>
+
+                        <script id="zammad_form_script" src="https://mimoto.zammad.com/assets/form/form.js"></script>
+
+                        <script>
+                            $(function () {
+                                $('#feedback-form').ZammadForm({
+                                    messageTitle: 'How can we help you?',
+                                    messageSubmit: 'Send',
+                                    messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
+                                    showTitle: true
+                                });
+                            });
+                        </script>
+                    </dd>
+                </dl>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<br/>

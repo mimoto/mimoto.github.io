@@ -92,3 +92,5 @@ The final file we need to look at is the **conf/relying-party.xml**, where we're
 {% endhighlight %}
 
 That's it, reload the web app and you should now have a second factor on all your web based SAML logins.
+
+The guide above sets out a simple way to integrate Duo MFA with Shibboleth IDP, but maybe this does not meet your exact needs? No problem; Shibboleth IDP is a very flexible piece of software and most situations can be caterred for, if you have specific requirements you need help with don't hesitate to <a href="/contact/">get in touch.</a>

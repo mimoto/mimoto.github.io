@@ -36,3 +36,4 @@ collections:
   scenarios:
     output: true
     permalink: /:collection/:name
+host: 0.0.0.0

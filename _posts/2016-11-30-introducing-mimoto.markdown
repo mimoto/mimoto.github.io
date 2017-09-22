@@ -2,7 +2,7 @@
 layout: post
 title:  "Introducing Mimoto"
 date:   2016-11-30 14:54:58 +0100
-author: Sam Jones
+author: sam_jones
 categories: 
 ---
 

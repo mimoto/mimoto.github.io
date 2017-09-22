@@ -2,7 +2,7 @@
 layout: post
 title:  "Duo MFA in Shibboleth IdP v3.3.x"
 date:   2017-06-01 14:54:58 +0100
-author: Sam Jones
+author: sam_jones
 categories: Shibboleth-IdP Duo MFA
 ---
 Multi-factor authentication is becoming increasingly prevalent today,

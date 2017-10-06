@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: service
 title:  "Open Source Software Support"
 date:   2017-10-06 12:00:00 +0100
 categories: services

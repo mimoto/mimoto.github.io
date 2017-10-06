@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<nav class="internalmenu" role="navigation">
+  <p>Services</p>
+  <ul>
+
+    {% for post in site.services %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+
+  </ul>
+</nav>
+
+
+{% for post in site.services %}
+
+      <article>
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        {{ post.excerpt }}
+      </article>
+
+    {% endfor %}
+
+<hr/>
+

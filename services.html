@@ -1,22 +1,13 @@
 ---
-layout: page
+layout: services
 title: Our Services
 permalink: /services/
-tab_order: 2
+tab_order: 3
+tab_active: true
 ---
 
-        <article>
-            <h1>We provide the following services:</h1>
-            <ul>
-                <li>Support for Shibboleth IdP (on Windows or Linux)</li>
-                <li>Support for Shibboleth SP (on Windows or Linux)</li>
-                <li>Advice, and troubleshooting, around SAML/Shibboleth protocol.</li>
-                <li>Help integrating with Office 365</li>
-                <li>Help integrating with ADFSv2 based services.</li>
-            </ul>
-        </article>
-        <article>
-            <h1>We offer a range of packages</h1>
-            <p>We offer a range of different hours per month packages to suit your needs. They’re a fixed price per month, each package comes with some hours, you can choose how much support you need, and if you need extra help one month you can buy extra hours.
- ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt urna eget ullamcorper scelerisque. Integer sed volutpat nunc. Maecenas ipsum libero, maximus et elementum in, porttitor eu ligula. Vivamus sagittis feugiat eros.</p>
-        </article>
+<article>
+    {% capture my_include %}{% include blurb/service_overview.markdown %}{% endcapture %}
+    {{ my_include | markdownify }}
+</article>
+

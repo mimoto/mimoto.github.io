@@ -26,21 +26,21 @@ Ultimately we're going to do 4 things ...
 First, let's make the Duo and MFA authentication flows available by modifying
  the **conf/idp.properties** file:
 
-{% highlight java %}
+{% raw %}
 #idp.authn.flows= Password
 idp.authn.flows= MFA|Duo|Password
-{% endhighlight %}
+{% endraw %}
 
 Next, we'll get the various keys we need for Duo in place, in **conf/authn/duo.properties** .
 
 3 of these keys come from Duo control panel, one of them you create yourself as described here <https://duo.com/docs/duoweb#1.-generate-an-akey>.
 
-{% highlight java %}
+{% raw %}
 idp.duo.apiHost = <the api host as specified in the duo control panel >
 idp.duo.applicationKey = <a key you need to generate as described here: https://duo.com/docs/duoweb#1.-generate-an-akey >
 idp.duo.integrationKey = <you'll find this key when you setup Shibboleth IdP as an application in the Duo control panel >
 idp.duo.secretKey = <Again, you'll find this in the Duo control panel >
-{% endhighlight %}
+{% endraw %}
 
 Our 3rd step is to describe the MFA behaviour we expect in the **conf/authn/mfa-authn-config.xml** :
 
@@ -73,7 +73,7 @@ This is the default, it tells the IdP to do Password authentication first, then 
 
 The final file we need to look at is the **conf/relying-party.xml**, where we're going to enable MFA as the authencation flow for Shibboleth.SSO and SAML2.SSO protocols:
 
-{% highlight java %}
+{% raw %}
     <bean id="shibboleth.DefaultRelyingParty" parent="RelyingParty">
         <property name="profileConfigurations">
             <list>
@@ -89,7 +89,7 @@ The final file we need to look at is the **conf/relying-party.xml**, where we're
             </list>
         </property>
     </bean>
-{% endhighlight %}
+{% endraw %}
 
 That's it, reload the web app and you should now have a second factor on all your web based SAML logins.
 

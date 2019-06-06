@@ -6,6 +6,55 @@ tab_order: 7
 tab_active: true
 ---
 
+<section>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 col-lg-5">
+                <address class="h2 d-block">328 Swanston St
+                    <br>Melbourne, VIC 3000</address>
+                <div class="mb-3">
+                    <span class="d-block lead">E: <a href="#">contact@insight.io</a></span>
+                    <span class="d-block lead">T: +61 7264 2927</span>
+                </div>
+                <p class="lead">
+                    Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="you@yoursite.com">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" placeholder="Type message here"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="mapid"></div>
+                <div class="height-50">
+                    <div class="position-absolute h-100 w-100 rounded shadow" data-marker-image="assets/img/map-marker.svg" data-maps-api-key="AIzaSyCfo_V3gmpPm1WzJEC9p_sRbgvyVbiO83M" data-address="328 Swanston St Melbourne Victoria" data-map-zoom="14">
+                        <div class="map-marker" data-address="328 Swanston St Melbourne Victoria"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4 ">
@@ -80,3 +129,7 @@ tab_active: true
 
 
 <br/>
+
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>

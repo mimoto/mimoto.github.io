@@ -1,4 +1,3 @@
-## Mimoto is a Federated Identity Management Consultancy
 
 We offer consultancy services and bespoke software development related to identity management, 
 identity assurance, authentication and authorisation services.

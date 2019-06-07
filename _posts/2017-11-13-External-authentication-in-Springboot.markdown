@@ -3,6 +3,7 @@ layout: post
 title:  "External authentication in Spring Boot"
 date:   2017-11-13 15:40:00 +0100
 author: sam_jones
+summary: Enabling federated authentication to your e-resource or web application.
 categories: java shibboleth_sp
 ---
 

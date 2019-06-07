@@ -3,6 +3,7 @@ layout: post
 title:  "Password policies: myths and tips"
 date:   2017-09-22 14:30:00 +0100
 author: sam_jones
+summary: The father of the password policy that many people are forced to use now regrets the advice he's given
 categories: passwords
 ---
 

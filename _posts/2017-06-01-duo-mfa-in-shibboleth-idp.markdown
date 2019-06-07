@@ -74,7 +74,7 @@ This is the default, it tells the IdP to do Password authentication first, then 
 
 The final file we need to look at is the **conf/relying-party.xml**, where we're going to enable MFA as the authencation flow for Shibboleth.SSO and SAML2.SSO protocols:
 
-{% raw %}
+```xml
     <bean id="shibboleth.DefaultRelyingParty" parent="RelyingParty">
         <property name="profileConfigurations">
             <list>
@@ -90,7 +90,7 @@ The final file we need to look at is the **conf/relying-party.xml**, where we're
             </list>
         </property>
     </bean>
-{% endraw %}
+```
 
 That's it, reload the web app and you should now have a second factor on all your web based SAML logins.
 

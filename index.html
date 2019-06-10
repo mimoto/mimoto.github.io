@@ -54,6 +54,7 @@ tab_active: true
         </div>
 </section>
 
+<!--
 <section>
     <div class="container">
         <div class="row text-center mb-4">
@@ -110,6 +111,7 @@ tab_active: true
 
     </div>
 </section>
+-->
 <!--
 <section class="pt-0">
     <div class="container">
@@ -161,6 +163,7 @@ tab_active: true
     </div>
 </section>
 -->
+<!--
 <section class="bg-white pt-md-4 pb-md-0">
     <div class="container">
         <div class="row justify-content-around align-items-center flex-md-row-reverse">
@@ -181,6 +184,7 @@ tab_active: true
         </div>
     </div>
 </section>
+-->
 
 <section class="pb-5">
     <div class="container">
@@ -196,73 +200,40 @@ tab_active: true
         <polygon fill="#F8F9FB" points="0 100 100 100 100 0" />
     </svg>
     <div class="container">
+
+
         <div class="row">
+
+
+            {% for post in site.posts reversed limit: 3  %}
+
+            {% assign author = site.data.authors[post.author] %}
+
             <div class="col-12 col-md-4 d-flex">
                 <div class="card shadow-lg">
                     <a href="#">
-                        <img class="card-img-top" src="assets/insight/img/header-13.jpg" alt="10 Tips for savvy travellers">
+                        <img class="card-img-top" src="{{post.image}}" alt="{{post.summary}}">
                     </a>
                     <div class="card-body py-3">
-                        <a href="#" class="mb-2 d-block">Java</a>
-                        <a href="#">
-                            <h5>External authentication in Spring Boot</h5>
+                        <a href="#" class="mb-2 d-block">{{ post.category }}</a>
+                        <a href="{{ post.url }}">
+                            <h5>{{ post.title }}</h5>
                         </a>
                         <div class="mb-4">
-                            <p>enabling federated authentication to your e-resource or web application.</p>
+                            <p>{{ post.summary }}</p>
                         </div>
                     </div>
                     <div class="card-footer">
                         <div class="d-flex align-items-center">
-                            <img src="assets/images/SamJonesAvatar.png" alt="Sam Jones" class="avatar mr-2">
-                            <span>Sam Jones</span>
+                            <img src="{{author.avatar}}" alt="{{author.name}}" class="avatar mr-2">
+                            <span>{{author.name}}</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 d-flex">
-                <div class="card shadow-lg">
-                    <a href="#">
-                        <img class="card-img-top" src="assets/insight/img/lending-6.jpg" alt="Securing your first-round of capital">
-                    </a>
-                    <div class="card-body py-3">
-                        <a href="#" class="mb-2 d-block">Policy</a>
-                        <a href="#">
-                            <h5>Password policies: myths and tips</h5>
-                        </a>
-                        <div class="mb-4">
-                            <p>The father of the password policy that many people are forced to use now regrets the advice he’s given</p>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/SamJonesAvatar.png" alt="Sam Jones" class="avatar mr-2">
-                            <span>Sam Jones</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 d-flex">
-                <div class="card shadow-lg">
-                    <a href="#">
-                        <img class="card-img-top" src="assets/insight/img/header-8.jpg" alt="Leverage these growth hacks to supercharge your startup">
-                    </a>
-                    <div class="card-body py-3">
-                        <a href="#" class="mb-2 d-block">Shibboleth</a>
-                        <a href="#">
-                            <h5>Duo MFA in Shibboleth IdP v3.3.x</h5>
-                        </a>
-                        <div class="mb-4">
-                            <p>many are choosing to use Duo to use a user’s mobile phone as a second factor.</p>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/SamJonesAvatar.png" alt="Sam Jones" class="avatar mr-2">
-                            <span>Sam Jones</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            {% endfor %}
+
         </div>
 
         <div class="row justify-content-around align-items-center spacer-y-4">
@@ -272,13 +243,13 @@ tab_active: true
             <div class="col-md-6">
                 <p class="lead mb-3 text-white">We offer fast replies and helpful answers</p>
                 <div class="d-flex align-items-center">
-                    <!--
-                    <a class="btn btn-primary btn-lg" href="#">Get started</a>
-                    <span class="d-block mx-1 mx-sm-2 text-small text-white">or</span>
-                    <a class="btn btn-light btn-lg" href="#">Request Demo</a>
-                    -->
+
+                    <a class="btn btn-primary btn-lg" href="/contact/">Say hello</a>
+
+
                 </div>
             </div>
         </div>
     </div>
+
 </section>

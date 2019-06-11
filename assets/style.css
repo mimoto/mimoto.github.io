@@ -1,9 +1,9 @@
-div.logo_box {
-    size: 100px;
-    display: block;
-    background-color: white;
+
+#nav_logo {
+    height: 60px;
     overflow: visible;
-    position: absolute;
-    top: 30px;
+    top: 0px;
     left: 30px;
+    position: absolute;
+
 }

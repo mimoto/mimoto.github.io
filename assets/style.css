@@ -1,6 +1,10 @@
 
 .top_navlogo {
     height: 60px;
+}
 
+.doc_article {
+    background-color: whitesmoke;
+    padding: 2em;
 }
 

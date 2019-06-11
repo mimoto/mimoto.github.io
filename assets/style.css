@@ -1,9 +1,6 @@
 
-#nav_logo {
+.top_navlogo {
     height: 60px;
-    overflow: visible;
-    top: 0px;
-    left: 30px;
-    position: absolute;
 
 }
+

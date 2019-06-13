@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introducing Doormouse; enterprise guest device registration"
-date:   2019-06-13 10:00:00 +0100
+date:   2019-06-14 10:00:00 +0100
 author: sam_jones
 summary: A new way to easily enable guest device access to your network
 image: /assets/insight/img/header-12.jpg

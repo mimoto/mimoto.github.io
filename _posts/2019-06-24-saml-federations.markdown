@@ -11,7 +11,7 @@ categories: explanations
 
 My [previous post](https://mimoto.co.uk/explanations/2019/06/13/saml-metadata-intro.html) explained the purpose of SAML metadata, and ended by listing the potential problems with configuring metadata by manually copying files between each service.
 
-TL;DR: Exchanging metadata in advance with each service you want to use is fine for a few services but doesn't scale at all. It may be practical for small organisations, but for academic institutions using hundreds of services it will become a considerable problem.
+Recap of previous episode: Exchanging metadata in advance with each service you want to use is fine for a few services but doesn't scale at all. It may be practical for small organisations, but for academic institutions using hundreds of services it will become a considerable problem.
 
 ## Federations
 

@@ -192,7 +192,7 @@ tab_active: true
 
         <div class="row">
 
-            {% for post in site.posts reversed limit: 3  %}
+            {% for post in site.posts limit: 3  %}
 
             {% assign author = site.data.authors[post.author] %}
 

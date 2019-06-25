@@ -4,7 +4,7 @@ title:  "Aggregated SAML Metadata and Federations in Higher Education"
 date:   2019-06-24 16:53:00 +0100
 author: pete_birkinshaw
 summary: How FE & HE use identity federations to keep SAML manageable
-image: /assets/insight/img/header-7.jpg
+image: /assets/images/headers/federation_street.jpg
 categories: explanations
 ---
 # Aggregated SAML Metadata and Federations in Higher Education

@@ -12,10 +12,12 @@ published: true
 ![](/assets/images/uni.jpg)
 
 One way to look at Universities, albeit very simplistically, is to say that
-they are in effect rather like a regular business. They have employees who work
-for the university, and they have customers (students) who pay money to consume
-the institution's product. Indeed, Universities being more business like has
-been a broad strategic direction for many years now.
+they are in effect rather like a regular business. 
+
+They have employees who work for the university, and they have customers
+(students) who pay money to consume the institution's product. Indeed,
+Universities being more business like has been a broad strategic direction for
+many years now.
  
 From a systems and software point of view this way of thinking is appealing!
 There is a vast market of software for business in the world that academic IT

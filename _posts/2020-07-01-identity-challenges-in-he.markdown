@@ -12,7 +12,7 @@ published: true
 ![](/assets/images/uni.jpg)
 
 One way to look at Universities, albeit very simplistically, is to say that
-they are in effect rather like a regular business. 
+they are in effect rather like a regular business. Just adding some text.
 
 They have employees who work for the university, and they have customers
 (students) who pay money to consume the institution's product. Indeed,

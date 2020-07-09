@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Identity challenges in higher education"
-date:   2020-06-01 09:00:00 +0100
+date:   2020-07-01 09:00:00 +0100
 author: sam_jones
 summary: Identity is often more complex in a University environment than it first appears.
 image: /assets/images/uni.jpg
@@ -11,8 +11,7 @@ published: true
 
 ![](/assets/images/uni.jpg)
 
-One way to look at Universities, albeit very simplistic-ally, is to say that
-they are in effect rather like a regular business. 
+One way to look at Universities, is to say that they are like businesses. 
 
 They have employees who work for the university, and they have customers
 (students) who pay money to consume the institution's product. Indeed,
@@ -20,213 +19,183 @@ Universities being more business like has been a broad strategic direction for
 many years now.
  
 From a systems and software point of view this way of thinking is appealing!
-There is a vast market of software for business in the world that academic IT
-departments can consume if think less in terms of students and lecturers and
-more in terms of customers and employees. Certainly a lot of good has come from
+There is a vast market of software for business that academic IT departments
+can consume if they think less in terms of students and lecturers and more in
+terms of customers and employees. Certainly a lot of good has come from
 re-purposing software from industry.
 
 But it's not all roses, let's talk about some of the problems here.
 
 ## Separation of the user pool into distinct user types or systems
 
-If we're a company that makes widgets and then sells them online, from an IT
-point of view, we have our staff and some customers. They're all people, but from
-an IT perspective they have different needs and it makes sense for us to treat
-them as two very different, quite obvious, types.
+Thinking of our students as customers tends to lead us down a path where we
+make seperate systems for our staff and students.
 
-Customers; who buy the widget they want, they can access support resources, and
-can access a online portal to manage their widget
+In a commerical organisation this is normally a very sensible thing to do. If
+we're a organisation that makes widgets, the needs of our customers and staff
+are totally different with little or no overlap. Customers and staff will still
+both have identity information we need to keep track of. We could try and push
+that all into a single system, but what is the pay off if the two groups of
+users never access the same systems?  On the other hand what is the risk of
+doing this? Adding our customers to the same identity infrastructure as our
+staff exposes us to possible priviledge escalation attacks that would be
+impossible otherwise.
 
-Staff; Need access to the customer support system, some file storage for
-documents, email, etc. We also need to track a bunch of data about them, eg
-payroll/leave. 
+User requirements in a University tend to have more overlap. Everyone is going
+to need access to email, files, and calendar. Most are going to need access to
+the online learning environment.  There are some systems that only staff should
+have access to like finance and HR. There is also an array of smaller systems
+to support particular teaching and research objectives that only a few should
+have access to.
 
-Clearly, in this example, there is no real cross over between the two groups,
-it makes sense to have separate systems for the these tasks. Indeed, trying to
-shove these identities into a single system would add an information security
-risk because it makes us easier to accidentally give more access than is
-appropriate.
+If we don't want our users to drown in username and password combinations we're
+gonna need a authentication system that grants access to all of these systems
+with a single set of credentials per user.
 
-In a university we have students and we have staff. Students need to be able to
-access learning resources from across the world, we probably also have a
-teaching platform that they need to access, we'll give them an email account,
-they'll need somewhere to put files, and a range of other things. Staff will
-need many of the same things, but sometimes in a different way. They'll need
-email and files in much the same way as the students, they'll also need access
-to the teaching platform but as a content creator/curator rather than as a
-client, also staff will need access to systems that give information about
-students like their grade history. We need to be careful about the access
-students have to that!
+If we limit ourselves into thinking about just staff or student when we're
+thinking about our users, the systems we build reflect that.  Hence we end up
+with an email system for students that's totally seperate from the email system
+for staff, or with seperate files storage systems, desktop experiences, web
+portals, etc.
 
-Clearly here we have a lot of cross over. Email and files are the same
-function, the users maybe need different access rights but it's more efficient
-to use the same system for both and avoid separating the user pool. As far as
-the teaching system is concerned, students and staff need to be in the same one
-by necessity if the students are to consume the content created by staff.
-Though clearly, their roles are very different.
+We un-wittingly build borders around our percieved user groups.
+
+A lot of commercial software makes similar assumptions. For example it's not
+uncommon to find help desk systems that assume you're either a member of
+support staff or a customer with no nuances inbetween.
+
+If you're a company that sells widgets, how often does one of your customers
+login to the helpdesk system and start working on tickets? Probably not that
+often, but this kind of exception is quite common in HE.
 
 ## Students and Staff and everything in between
 
-Let's run with the teaching system example. We have two very clear roles; you're
-either a content creator or a content consumer. We can describe this in our
-software system in a simple way by creating the two roles and then governing
-all access to this system based on which one the user at the time has.
+One way things can get murky when we build these barriers, is it makes it hard
+for us to decide how to handle people who sit in the akward middle ground.
 
-This seems to fit the requirement, but it breaks down when the lines between
-student and staff get a little blurred. It's common to recruit MSc students as
-teaching assistants for undergraduate courses; how does this affect our systems
-security model?  Ideally the access needs to be more nuanced, the MSc
-student/teaching assistant needs to be a mixture of the two roles. If the
-software isn't able to handle this, then we end up with cumbersome work-arounds
-like giving the person two different logins and putting the responsibility on
-them to use the correct identity for a given task. This is often confusing for
-users.
+Many times a university will want to treat certain classes of student more like
+staff and less like students, but not completely like staff! This happens a
+lot with Phd students who are often expected to take on teaching assistant
+roles. Similarly IT support roles are sometimes delegated to enthusiasitc
+technically-able students.
 
-Spinning up multiple identities for an individual also makes it hard to revoke
-access when it is no longer required as it is harder to manage in an automated
-way. We can try to manage this manually, but this tends to mean access isn't
-revoked in a timely way and often manually managed access control lists contain
-a large number of accounts who should not have access, an obvious security
-risk.
+When we make hard boundries between the systems we provide for our users,
+limiting some and enhancing others, we make handling these edge case scenarios
+difficult or impossible.  
 
-## It's common for University's buy their own produce
+We might decide to work around cases like this by spinning up a second IT
+identity for the student, one that represents their more staff-like role, and
+telling them to choose their identity based on the task at hand. This is
+confusing for users, but it's also a problem from an auditing and compliance
+point of view. How are accounts like this managed? When do they get revoked? If
+there aren't good answers to these questions this kind of work-around becomes a
+security hazard.
 
-A student studies at a University, they like the academic life, they're good at
-their field and they have a strong desire to study it deeper. Their lecturers
-are pleased with the student is doing and think they hold potential. The
-students course ends and as they start to look for work they notice a position
-is available at the Uni their studying at. They apply, they get the role, the
-student becomes a member of staff with no break between their study and
-professional roles.
+## It's common for University's buy their own produce; and that's good!
 
-This is in fact a overly simplified version of a very common pattern in HE that
-doesn't really apply in other sectors. Our example is simplistic because the
-change is rarely this binary. Normally a student will phase across to academic
-life by undertaking a higher level course with some expectation of teaching, and
-gradually getting closer to a role focused more directly on research or
-teaching and less on being taught (although they are likely always learning).
+This behaviour of treating a student like a member of staff is a part of a
+larger process. It goes like this:
+
+1. Student attends university as undergraduate and studies hard.
+1. Student completes degree and decides to continue to a postgraduate degree
+1. Student starts to take on staff-like functions
+1. Student finishes postgraduate degree and continues to carry out some staff like functions
+1. Student aquires post-doctoral role or lectureship and becomes "staff"
+
+Universities, at their core, are in the business of knowledge. They train
+people to be knowledgable and equip them to be able to create/discover
+knowledge. Obviously, it's going to make sense for them to retain a portion of
+their graduates as staff. So this scenario is very common.
 
 How does IT reflect this? We need to revoke access to systems as it becomes
 inappropriate for them to have access, we need to grant new access as it is
 necessary, we need to find a way to manage the murky middle ground as they
 transition from one role to the other.
 
-In reality most commercial software aimed at HE has some cover for this so our
-example of the online learning platform is probably capable of handling this,
-but other functions get tripped up here and it's important to be aware of this
-when utlizing software designed for other sectors in HE; how well does it fit
-your more unusual needs?
+As is often the case it's easy to think of ways IT can drop the ball here, eg:
+revoke access to all students at the end of their course, there-by locking out
+our example user as well.
+
+If we've seperated out our user pool into grouping based on type then arguably
+we should find a way to manage this migration as seemlessly as possible. This
+is often very hard, commercial data migration tools tend only support migration
+paths that suit the commerical interests of the supplier. That is to say
+migration in tends to be easy and migration away ... not so easy. 
+
+Even where a tool exists, often, some aspects of the data will be lost. 
+
+Sometimes this problem is passed to the user "Please backup your data so we can
+migrate you to the staff system." before presenting them with a new and empty
+account after the migration.
 
 ## More efficiency! More data responsibility! More utility!
 
-There are several trends in HE IT right now that vi with each other. Data
-processing maturity is becoming increasingly important with big fines and
-scandals waiting for organisations that treat their data negligently. Cost is a
-factor given the changing funding landscape for HE, so where Universities would
-previously run or develop their own in house systems to meet their users' needs,
-now the cost of having systems administration staff and development staff
-competes with things that are more core to the Universities goals. This
-internal competition increases the desire to seek efficiency gains by doing less
-costly development and hosting internally. At the same time the general
-expectation of what we get from our IT systems is higher than ever before.
-Universities also face some more recent competition in the form of MOOCs where
-the technological experience plays a key role, but the organisational cost
-model is radically different.
+There are several trends in HE IT right now that conflict with each other.
 
-These requirements compete with each other for time and money. Our identity
-model is complex and data handling maturity is importance for compliance, an
-answer would be to develop and run systems in house but the cost is high and it
+ * Data processing maturity is becoming increasingly important with big fines
+   and scandals waiting for organisations that treat personal data poorly.
+
+ * The current funding model is HE applies pressure to reduce costs. Therefore
+   where once an institution would have the capacity to run a service in house,
+	 it may now seek to move the function to an external provider. Providing
+   greater capacity for core functions[^1].
+
+ * Society as a whole expects to get more from IT than ever before.
+
+These requirements compete with each other for time and money. If our identity
+model is complex and data handling maturity is important for compliance, an
+answer might be to develop and run systems in house but the cost is high and it
 robs our core business functions of resources.
 
-Off the shelf and Software as a Service solutions are comparatively cheap,
-which means we can focus better on our core objectives, but they often have a
-security model that doesn't neatly match our identity scenario. If unchecked we
-can end up handling sensitive data poorly because of this, or add unwanted
-complexity from a user point of view.
+Off the shelf and Software as a Service (SaaS) solutions are comparatively
+cheap, but they often have a security model that doesn't neatly match our
+identity scenario. If unchecked we can end up handling sensitive data poorly
+because of this, or add unwanted complexity from a user point of view.
 
-We can expand our scenario yet further. Many Universities offer pre-access
-programs to bring students-to-be up to a required standard before they start
-their course. This and other factors means sometimes students are younger than 18.
-How does an organisations responsibilities change when some of their users
-are legally not adults? We can restrict all student access as if they were not
-adults to safe guard the organisation in this respect, but what is the fall out
-of treating everyone like a child when only a minority are not yet adults?
+The amount of sensitive data a University might handle is huge, just think
+about the strong links that Universities often have with hospitals! Most
+students are older than 18, but pre-access programs and similar mean that not
+all are. Many students live in University owned and run premises, which leads
+to yet more information security risks.
 
 ## Who is a part of your organisation?
 
-Age, and pre-course programs bring another question. E-resource providers
-license their content to Universities. As a part of the terms of such
-contracts, Universities must authenticate their users and make statements about
-the user's membership of the University. The E-resource then restricts based on
-those statements. It is a legal requirement that the statements are correct.
+E-resource providers license their content to Universities. As a part of the
+terms of such contracts, Universities must authenticate their users and make
+statements about the user's membership of the University. The E-resource then
+restricts based on those statements. This can only work because the statements
+the Universities make are expected to be accurate.
 
-Is our pre-access course student a member of the institution, should they have
-access to the resource according to the agreed license? How is this expressed by
-the IT system? I would argue there is likely not a single answer and one needs
-system that is flexible enough to facilitate a range of scenarios.
+If we grant an external organisation some level of access to our systems and
+give their users identities within our infrastructure, then should those people
+also get access to the licensed content? Clearly not, but this limitation must
+be expressed by the IT System to aquadquately effect the restrictions of the
+license. Otherwise, the likely default of those user accounts repersents a
+breach of the license terms.
 
 This goes deeper as you explore the myriad of relationships Universities have
-with people. Some Universities make their libraries open to the public, what IT
-access should these people get? Sometimes a professor will retire after a long
-career but because their interest was always the field and not the pay they
-continue to carry out their important work for their now former employer, how
-does this feed into our identity management? If we hire 3rd party contractors
-to work on our IT systems, are they the members of the institution that should
-have access to certain licensed e-resources?
+with people:
 
-Universities also have alumni. Clearly Alumni do not need a lot of access to
-systems at the institution but they remain a source of funding for Universities
-and if a University chooses to seek a closer relationship with it's alumni then
-those people will likely need an increasingly rich digital identity from a
-University perspective.
+ * Some Universities make their libraries open to the public, what IT access
+   should these people get?
 
-You can see how the devil is in the detail!
+ * Sometimes a professor will retire after a long career but continue to carry
+	 out their important work for their now former employer. How do we know when
+	 to revoke this access so that we're managing our user population maturely?
+   What systems should they have access to?
 
-## Bring your own device
-
-A comparatively recent concern in the commercial world is BYOD (Bring your own
-device). The rise of smart phone and wireless technology has posed a data
-access question to organisations who hither-to did not need to consider it:
-what access to organisational resources should a user owned device get?
-
-Previously it wasn't much of a concern because few people had phones capable of
-email and web, and the data access to do so was expensive at any rate. Working
-from home on ones own computer was also less of an acceptable idea (to both
-parties) as it is now. Organisations could easily hide all their infrastructure
-behind one big firewall and control access tightly by only allowing
-organisational equipment access to the corporate network.
-
-Universities got early exposure to the bring your own device problem: students
-in halls would often bring their own equipment and do their best to manage
-access control in a situation where not all devices on the network could be
-considered safe.
-
-## Legacy infrastructure
-
-All but the newest (or most diligent) of organisations have some legacy
-infrastructure. But most universities have a history that pre-dates the change
-in funding that has effected the sector, which is not necessarily true in other
-industries. Additionally, the Higher Education sector played a central role in
-the early days of the Internet. This means sometimes HE Organisations are
-burdened with a legacy infrastructure based on a radically different set of
-requirements and cost model than what they have today. A harder to resolve
-situation than in commerce where legacy infrastructure tends to refer merely
-to an out of date way of solving a problem that still exists in much the same
-way it did before.
-
-For any organisation legacy is a pain. There is much risk switching between
-systems, likely user disruption, and little perceived business benefit.
-
-These systems often quietly get on with their day to day business, knowingly or
-unknowingly ignored by the IT organisation, often requiring expertise or
-knowledge that has left the organisation or is the domain of very few
-individuals. The strategy of waiting for the inevitable is not a good one!
+ * Universities also have alumni and may wish to extend services to them, but
+   without jepordizing the rest of the estate.
 
 ## So what to do?
 
+We're a long way from the student and staff model we started with. Identity
+provision is a complex task in a University environment and the right path 
+depends on the exact requirements, but there are some things that can help:
+
  * Rich identity management that accurately reflects your users roles is key.
  * Buy into software and services which provide rich controls over access and
-	 permissions, and ideally exernalize these.
+	 permissions, and can ideally exernalize these.
  * Avoid software that pushes you compromise your users experience because of
    an inferior access model.
  * Avoid software that has it's own authentication system and cannot integrate
@@ -236,11 +205,12 @@ individuals. The strategy of waiting for the inevitable is not a good one!
 
 ## Get help!
 
-If these experiences strike a cord with you, maybe you're finding yourself in a
-situation where you're having to unpick a similar situation. If so consider
-[getting in touch](/contact/), we're only to happy to help!
+Do these issues strike a cord with you, or maybe you're finding yourself in a
+similar situation? If so consider [getting in touch](/contact/), we're only to
+happy to help!
 
+---
+# Footnotes:
 
-
-
+[^1]: Switching from a legacy IT System is rarely as clean as this, often ending in a situation where both new and old worlds exist in perpetuity.
 

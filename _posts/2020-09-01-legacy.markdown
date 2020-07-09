@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Legacy infrastructure"
+date:   2020-09-01 09:00:00 +0100
+author: sam_jones
+summary: Identity is often more complex in a University environment than it first appears.
+image: /assets/images/uni.jpg
+categories: 
+published: false
+
+---
+## Legacy infrastructure
+
+All but the newest (or most diligent) of organisations have some legacy
+infrastructure. But most universities have a history that pre-dates the change
+in funding that has effected the sector, which is not necessarily true in other
+industries. Additionally, the Higher Education sector played a central role in
+the early days of the Internet. This means sometimes HE Organisations are
+burdened with a legacy infrastructure based on a radically different set of
+requirements and cost model than what they have today. A harder to resolve
+situation than in commerce where legacy infrastructure tends to refer merely
+to an out of date way of solving a problem that still exists in much the same
+way it did before.
+
+For any organisation legacy is a pain. There is much risk switching between
+systems, likely user disruption, and little perceived business benefit.
+
+These systems often quietly get on with their day to day business, knowingly or
+unknowingly ignored by the IT organisation, often requiring expertise or
+knowledge that has left the organisation or is the domain of very few
+individuals. The strategy of waiting for the inevitable is not a good one!
+

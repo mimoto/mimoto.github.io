@@ -9,7 +9,7 @@ tab_active: true
 <div class="row justify-content-center text-center mb-3">
     <div class="col-md-11 col-lg-10 col-xl-9">
         <div class="my-3">
-            <h1>Mimoto is a Federated Identity Management Consultancy</h1>
+            <h1>Mimoto is an Identity Management Consultancy</h1>
         </div>
         <span class="lead"></span>
     </div>
@@ -20,6 +20,19 @@ tab_active: true
         <article class="lead doc_article">
 
             {% capture my_include %}{% include blurb/intro.markdown %}{% endcapture %}
+            {{ my_include | markdownify }}
+
+        </article>
+    </div>
+</div>
+
+<hr/>
+
+<div class="row justify-content-center">
+    <div class="col-md-9 col-lg-8 col-xl-7">
+        <article class="lead doc_article">
+
+            {% capture my_include %}{% include blurb/about_team.markdown %}{% endcapture %}
             {{ my_include | markdownify }}
 
         </article>

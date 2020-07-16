@@ -213,8 +213,6 @@ happy to help!
 ---
 # Footnotes:
 
-[^1]: Switching from a legacy IT System is rarely as clean as this, often
-ending in a situation where both new and old worlds exist in parrallel for some
-time.
+[^1]: Switching from a legacy IT System is rarely as clean as this, often ending in a situation where both new and old worlds exist in parrallel for some time.
 
 

@@ -206,7 +206,7 @@ depends on the exact requirements, but there are some things that can help:
 
 ## Get help!
 
-Do these issues strike a cord with you, or maybe you're finding yourself in a
+Do these issues strike a chord with you, or maybe you're finding yourself in a
 similar situation? If so consider [getting in touch](/contact/), we're only to
 happy to help!
 

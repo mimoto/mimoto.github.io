@@ -4,7 +4,22 @@
 }
 
 .doc_article {
-    background-color: whitesmoke;
+/*    background-color: whitesmoke;*/
+    background-color: white;
     padding: 2em;
 }
 
+.captioned_image {
+/*	border: 1px solid #ccc;*/
+	padding: 2px;
+	display: flex;
+	background-color: white;
+	flex-direction: row;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+figcaption {
+	padding-left: 10px;
+}

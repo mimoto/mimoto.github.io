@@ -1,4 +1,4 @@
-## About Doormouse
+![](/assets/images/dm-full-logo.svg)
 
 Doormouse is a product which allows guests to access your wired IT network using their own devices such as laptops and
 games consoles. This helps meet the regulatory requirement for network owners to monitor and record access.
@@ -11,6 +11,11 @@ Guests are taken through a simple self-service registration process:
 
 As the network owner you retain control, with an administration panel allowing appropriate staff to track network access
  by guests.
+
+## What our customers say
+
+{% include image.html url="/assets/images/logo-university-of-manchester.png" description="'Since we switched to using Doormouse our support tickets have dropped by nearly 65% compared to the same period in previous years. Mimoto effectively engineered out our common time consuming problems allowing our support staff to focus their time on other things.' - Halls Support Manager, The University of Manchester" %}
+
 
 ## FAQ
 

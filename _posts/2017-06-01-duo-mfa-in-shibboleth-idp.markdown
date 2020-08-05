@@ -29,8 +29,11 @@ First, let's make the Duo and MFA authentication flows available by modifying
  the **conf/idp.properties** file:
 
 {% raw %}
+
 #idp.authn.flows= Password
-idp.authn.flows= MFA|Duo|Password
+
+idp.authn.flows= MFA
+
 {% endraw %}
 
 Next, we'll get the various keys we need for Duo in place, in **conf/authn/duo.properties** .

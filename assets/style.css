@@ -28,9 +28,26 @@ figcaption {
 	background-position: center;
 	height: 435px;
 	background-size: contain;
+
 }
 
 #headline_block h1 {
 	background: rgba(255,255,255,0.5);
 	line-height: 2em;
 }
+
+#about_team {
+
+}
+
+#about_team p {
+	display: table;
+}
+
+#about_team img {
+	width: 256px;
+	float: left;
+	margin: 0px;
+
+}
+

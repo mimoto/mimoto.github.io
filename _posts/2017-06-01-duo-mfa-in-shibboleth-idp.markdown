@@ -28,21 +28,21 @@ Ultimately we're going to do 4 things ...
 First, let's make the Duo and MFA authentication flows available by modifying
  the **conf/idp.properties** file:
 
-{% raw %}
+```
 #idp.authn.flows= Password
-idp.authn.flows= MFA|Duo|Password
-{% endraw %}
+idp.authn.flows= MFA
 
+```
 Next, we'll get the various keys we need for Duo in place, in **conf/authn/duo.properties** .
 
 3 of these keys come from Duo control panel, one of them you create yourself as described here <https://duo.com/docs/duoweb#1.-generate-an-akey>.
 
-{% raw %}
+```
 idp.duo.apiHost = <the api host as specified in the duo control panel >
 idp.duo.applicationKey = <a key you need to generate as described here: https://duo.com/docs/duoweb#1.-generate-an-akey >
 idp.duo.integrationKey = <you'll find this key when you setup Shibboleth IdP as an application in the Duo control panel >
 idp.duo.secretKey = <Again, you'll find this in the Duo control panel >
-{% endraw %}
+```
 
 Our 3rd step is to describe the MFA behaviour we expect in the **conf/authn/mfa-authn-config.xml** :
 
@@ -96,3 +96,10 @@ The final file we need to look at is the **conf/relying-party.xml**, where we're
 That's it, reload the web app and you should now have a second factor on all your web based SAML logins.
 
 The guide above sets out a simple way to integrate Duo MFA with Shibboleth IDP, but maybe this does not meet your exact needs? No problem; Shibboleth IDP is a very flexible piece of software and most situations can be caterred for, if you have specific requirements you need help with don't hesitate to [get in touch.](/contact/)
+
+-----
+Update: an earlier version of this article included a properties value `idp.authn.flows= MFA|Duo|Password`.
+ 
+This can potentially allow your IdP to run the non-MFA flows directly. We've fixed the article to 
+specify `idp.authn.flows= MFA` instead.
+

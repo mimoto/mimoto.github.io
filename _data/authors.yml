@@ -1,8 +1,8 @@
 sam_jones:
   name: Sam Jones
   email: sam@mimoto.co.uk
-  avatar: /assets/images/SamJonesAvatar.png
+  avatar: /assets/images/sam_avatar.jpg
 pete_birkinshaw:
   name: Pete Birkinshaw
   email: pete@mimoto.co.uk
-  avatar: /assets/images/pete_avatar.png
+  avatar: /assets/images/pete_avatar.jpg

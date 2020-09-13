@@ -1,7 +1,5 @@
 
-.top_navlogo {
-    height: 60px;
-}
+
 
 .doc_article {
 /*    background-color: whitesmoke;*/
@@ -22,4 +20,17 @@ img {
 }
 figcaption {
 	padding-left: 10px;
+}
+
+#headline_block {
+	background-image: url("/assets/images/strip_wall.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 435px;
+	background-size: contain;
+}
+
+#headline_block h1 {
+	background: rgba(255,255,255,0.5);
+	line-height: 2em;
 }

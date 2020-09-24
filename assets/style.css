@@ -9,18 +9,18 @@
 
 .captioned_image {
 /*	border: 1px solid #ccc;*/
-	padding: 2px;
+/*	padding: 2px;
 	display: flex;
 	background-color: white;
 	flex-direction: row;
-}
-img {
+}*/
+/*img {
 	width: 100%;
 	height: auto;
-}
-figcaption {
+}*/
+/*figcaption {
 	padding-left: 10px;
-}
+}*/
 
 #headline_block {
 	background-image: url("/assets/images/strip_wall.jpg");

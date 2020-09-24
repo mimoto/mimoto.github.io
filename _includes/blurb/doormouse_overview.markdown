@@ -14,7 +14,7 @@ As the network owner you retain control, with an administration panel allowing a
 
 ## What our customers say
 
-{% include image.html url="/assets/images/logo-university-of-manchester.png" description="'Since we switched to using Doormouse our support tickets have dropped by nearly 65% compared to the same period in previous years. Mimoto effectively engineered out our common time consuming problems allowing our support staff to focus their time on other things.' - Halls Support Manager, The University of Manchester" %}
+{% include image.html url="/assets/images/logo-university-of-manchester.png" description="'Since we switched to using Doormouse our support tickets have dropped by nearly 65% compared to the same period in previous years. Mimoto effectively engineered out our common time consuming problems allowing our support staff to focus their time on other things.' - Mike Taylor (Halls Support Manager, The University of Manchester)" %}
 
 
 ## FAQ
@@ -55,8 +55,4 @@ in your organisation.
 Control of user data is primarily defined by your existing identity infrastructure, so you can choose which information
 is appropriate to release to Doormouse. Doormouse also allows the user to optionally supply some additional data, but
 they can revoke permission at any time. User data retention can be configured to meet your own policy/ legal needs.
-
-### How can I access a free demonstration version Doormouse?
-
-We want to make sure Doormouse is right for your organisation. A [free demonstration version](http://get.doormou.se) is available.
 

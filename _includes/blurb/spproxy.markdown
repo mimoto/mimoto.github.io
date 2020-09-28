@@ -1,25 +1,26 @@
-# SP Install with Apache proxy
+# Shibboleth Service Provider Proxy
+![](/assets/insight/img/card-image-background-3.jpg)
 
-If you have a web application that needs protecting and you're not using Apache
-as your web host, we can combine Shibboleth SP with an Apache proxy to your web
-application. We can then relate authentication information via headers or via
-the remote_user field (where supported).
+This service is best if you already have a web-application developed and you
+want to make it easily accessible by students/academics, or if a University has
+requested you add support for their login system.
 
-This is available as a VM, or can be a docker container you can use with your
-existing docker eco system.
+Our Shibboleth SP Proxy works well for web-applications; it's independant of
+the rest of your service so it can work with almost anything, and it can be
+made to integrate simiply requiring mininal or no software changes for your
+site.
 
-## Features
+We can deliver this either as a VM configuration, or as a docker container, so
+that it suits the rest of your infrastructure.
 
-* Metadata review and basic authentication test
-* Help registering entity with UK Federation or ...
-* ... Support registering with up to 5 direct metadata trusts
+## Features/Benefits
 
-## Benefits
-
-* Quick turn around
-* High standard of federated access management using industry best practice
-* No ongoing obligation
-* Work can be completely isolated from existing infrastructure, reducing risk.
+* Fully remote service, no physical access or site visit required.
+* Based on latest stable release of industry recommended software to ensure you are on a well supported, secure, platform
+* Help registering entity with UK Federation (allowing easy integration with Universities across the world)  or ...
+* ... support registering with up to 5 direct metadata trusts, if you have known partners you need to work with.
+* Quick turn around, installation is completed in 1 working day.
+* Un-complicated architectural approach, seperation from exisiting infrastructure reduces risk.
 
 ## Options
 
@@ -31,11 +32,12 @@ docker container.
 With this approach we install and configure Shibboleth SP with an Apache proxy
 on a VM (or hardware) that you provide.
 
+We recommend this for most customers.
+
 #### Pre-requsites
 
 * Linux (RedHat, Centos, or Debian[^1]) based host machine
 * SSH access with ability to become root
-* Memory ....
 
 #### Price
 
@@ -43,12 +45,13 @@ on a VM (or hardware) that you provide.
 
 ### Docker hosted
 
-With this approach we supply a docker container and supporting resources for you to deploy on your existing docker infrastructure.
+We can supply this service as a high-quality docker container and associated
+configuration. However, to take up this option your team will already need to
+have a docker based infrastructure and be familiar with it's operation.
 
 #### Pre-requsites
 
 * Pre-existing container environment
-* Memory ....
 
 #### Price
 

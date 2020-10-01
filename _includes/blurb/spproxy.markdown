@@ -9,7 +9,7 @@ the rest of your service so it can work with almost anything, and it can be
 made to integrate simply requiring minimal or no software changes for your
 site.
 
-We can deliver this either as a VM configuration, or as a docker container, so
+We can deliver this either as a VM configuration, or as a Docker container, so
 that it suits the rest of your infrastructure.
 
 ## Features/Benefits
@@ -24,7 +24,7 @@ that it suits the rest of your infrastructure.
 ## Options
 
 The authentication proxy is available either as a VM configuration, or as a
-docker container.
+Docker container.
 
 ### VM/Hardware hosted
 
@@ -44,9 +44,9 @@ We recommend this for most customers.
 
 ### Docker hosted
 
-We can supply this service as a high-quality docker container and associated
+We can supply this service as a high-quality Docker container and associated
 configuration. However, to take up this option your team will already need to
-have a docker based infrastructure and be familiar with it's operation.
+have a Docker based infrastructure and be familiar with its operation.
 
 #### Pre-requsites
 

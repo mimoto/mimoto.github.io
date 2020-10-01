@@ -57,3 +57,4 @@ Control of user data is primarily defined by your existing identity infrastructu
 is appropriate to release to Doormouse. Doormouse also allows the user to optionally supply some additional data, but
 they can revoke permission at any time. User data retention can be configured to meet your own policy/ legal needs.
 
+[Find out more; get in touch.](/contact/)

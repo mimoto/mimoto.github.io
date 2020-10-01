@@ -40,6 +40,8 @@ academic institutions which your service can then be integrated with easily.
 * Apache 2
 * Memory requirements
 
+[Find out more; get in touch.](/contact/)
+
 ## Footnotes
 
 [^1]: We are happy to install this on a debian host, however it should be noted that the Shibboleth Constorium do not support Shibboleth SP3 running on debian.

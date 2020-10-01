@@ -1,5 +1,4 @@
 # Shibboleth Service Provider Proxy
-![](/assets/insight/img/card-image-background-3.jpg)
 
 This service is best if you already have a web-application developed and you
 want to make it easily accessible by students/academics, or if a University has

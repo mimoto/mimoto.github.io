@@ -1,5 +1,4 @@
 # Shibboleth Service Provider Installation
-![](/assets/insight/img/card-image-small-3.jpg)
 
 This service is perfect if you have a protected or licensed resource you want
 allow one or more Universities access to.

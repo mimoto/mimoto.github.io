@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Identity challenges in higher education"
+title:  "Identity Challenges In Higher Education"
 date:   2020-07-16 12:57:00 +0100
 author: sam_jones
 summary: Identity is often more complex in a University environment than it first appears.

@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Bring your own device"
+date:   2020-06-01 09:00:00 +0100
+author: sam_jones
+summary: Identity is often more complex in a University environment than it first appears.
+image: /assets/images/uni.jpg
+categories: 
+published: false
+---
+
+## Bring your own device
+
+A comparatively recent concern in the commercial world is BYOD (Bring your own
+device). The rise of smart phone and wireless technology has posed a data
+access question to organisations who hither-to did not need to consider it:
+what access to organisational resources should a user owned device get?
+
+Previously it wasn't much of a concern because few people had phones capable of
+email and web, and the data access to do so was expensive at any rate. Working
+from home on ones own computer was also less of an acceptable idea (to both
+parties) as it is now. Organisations could easily hide all their infrastructure
+behind one big firewall and control access tightly by only allowing
+organisational equipment access to the corporate network.
+
+Universities got early exposure to the bring your own device problem: students
+in halls would often bring their own equipment and do their best to manage
+access control in a situation where not all devices on the network could be
+considered safe.
+

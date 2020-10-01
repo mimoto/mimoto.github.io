@@ -7,7 +7,7 @@ requested you add support for their login system.
 
 Our Shibboleth SP Proxy works well for web-applications; it's independant of
 the rest of your service so it can work with almost anything, and it can be
-made to integrate simiply requiring mininal or no software changes for your
+made to integrate simply requiring minimal or no software changes for your
 site.
 
 We can deliver this either as a VM configuration, or as a docker container, so
@@ -20,7 +20,7 @@ that it suits the rest of your infrastructure.
 * Help registering entity with UK Federation (allowing easy integration with Universities across the world)  or ...
 * ... support registering with up to 5 direct metadata trusts, if you have known partners you need to work with.
 * Quick turn around, installation is completed in 1 working day.
-* Un-complicated architectural approach, seperation from exisiting infrastructure reduces risk.
+* Un-complicated architectural approach, separation from existing infrastructure reduces risk.
 
 ## Options
 

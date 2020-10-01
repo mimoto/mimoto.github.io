@@ -12,7 +12,7 @@ with Universities across the world quickly and easily.
 
 Our experts will add Shibboleth SP to your existing infrastructure and help you
 integrate it with your customers. Because the Shibboleth SP software is
-seperate from your own site, you have a lot of freedom to host your own content
+separate from your own site, you have a lot of freedom to host your own content
 the way you desire.
 
 Also we'll guide you through the process of getting setup with the UK Access

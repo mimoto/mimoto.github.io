@@ -32,7 +32,8 @@ Doormouse allows you to grant access to your wired network via user-owned device
 ### How much does Doormouse cost?
 
 The cost of Doormouse depends on the size of your organisation and approximate number of potential users.  There is a
-monthly subscription, which includes set up and technical support. The appearance of the software can be customised for your organisation at an additional cost. We would be pleased to discuss your specific requirements.
+monthly subscription, which includes set up and technical support. The appearance of the software can be customised for
+ your organisation at an additional cost. We would be pleased to discuss your specific requirements.
 
 ### What kind of organisation is Doormouse suitable for?
 

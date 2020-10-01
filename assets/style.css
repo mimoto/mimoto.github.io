@@ -7,13 +7,14 @@
     padding: 2em;
 }
 
-/*.captioned_image {
-	border: 1px solid #ccc;
+.captioned_image img{
+/*	border: 1px solid #ccc;
 	padding: 2px;
 	display: flex;
 	background-color: white;
-	flex-direction: row;
-}*/
+	flex-direction: row;*/
+  width: auto;
+}
 img {
 	width: 100%;
 	height: auto;

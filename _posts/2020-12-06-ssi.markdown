@@ -1,0 +1,131 @@
+---
+layout: post
+title: "What is self soverign ID?"
+summary: A lay person's introduction to self soverign identity
+date:   2020-12-02 09:00:00 +0100
+author: sam_jones
+image: /assets/images/luis-alberto-certs.jpg
+published: true
+---
+
+![a person amoungst their papers](/assets/images/luis-alberto-certs.jpg)
+###### Title photo: [Luis Alberto Cardenas Otaya](https://www.pexels.com/@luis-alberto-cardenas-otaya-2321018)
+
+| Words: | <1,000 |
+| Time:  | 5 minute read |
+
+
+# Preamble
+
+Towards the end of last month Mimoto was at Identity week. What was originally
+planned to be a physical event became a fully online conference due to the
+COVID-19 pandemic.
+
+It was an interesting few days; it was the first event we'd had an exhibition
+stall at, and of course it being online only meant it was a very different
+experience from an exhibitor point of view.
+
+There were also a range of interesting talks from experts across the world.
+
+One of the main themes of the event was self soverign identity (SSI).  Whilst
+watching some of the talks about SSI, I reflected that often when people ask me
+what I do, I end up having to explain the concept of federated identity as a
+kind of pre-requsite piece of knowledge.
+
+So I thought I would take a bit of time to write a short lay-person's
+introduction to SSI and briefly cover how it differs from centrally managed
+identity and federated identity.
+
+# What is Self Soverign Identity
+
+The concept is still young and there is still a bit of discussion of what
+exactly is and isn't SSI but broadly speaking it's a authentication system
+where by a user can authenticate themselves to a service without having to rely
+on a central authority to enable that authentication.
+
+In this scenario the service doesn't need prior knowledge of the user, yet it
+can establish a trust based on the information the user supplies.
+
+The user has control over their identity and isn't reliant on a central
+authority to provide it on their behalf.
+
+I think it helps for us to look at self soverign identity in the context of other identity infrastructures.
+
+# Identity architectures
+
+![identity architectures diagram](/assets/images/id-architectures.png)
+
+## Centralized
+
+(Unfortunately) most login experiences we have are based on a centralized
+identity infrastructure. You want to use this service, first you have to
+register your details and create a set of credentials that you'll use to access
+the service. It's easy for the service provider to setup but it has a lot of
+negative affects for everyone involved: the user has _so_ many credentials, the
+service provider has a data security headache, and the whole approach fosters
+an envrionment where it is easy for a malicous attacker to win.
+
+## Open-trust
+
+This is the Google and Facebook login model. A handful of very large IDPs grant
+access to a vast range of services. The users identity information is
+hosted and controlled by these giant IDPs. Differences in protocol flavours
+mean that service providers can end up creating multiple login handlers to
+allow access to their site from two or more of these huge IDPs. The IDPs
+have control over which SPs can use the authentication framework, and what
+happens to the users data. The user does have fewer credentials to remember
+however.
+
+## Federated Trust
+
+With a federated login system, a user's identity is hosted by an IDP at a
+logical home institution for the user. They use the IDP to authenticate to one
+or more SPs. The IDP also discloses an amount of data about the user to the SP,
+the level of disclosure is ultimately at the IDP owners discretion. To the
+point where access can be trusted to be both anonymous and authenticated at the
+same time which is an interesting concept when you think about it.
+
+The user doesn't interact with the federation directly; they're most likely not
+even aware of it. The federation is essentially a register of participating
+IDPs and SPs and trust data they need to be able to interact with each other.
+The IDPs and SPs download a copy of this register and use it to establish
+technical trusts between themselves whilst authenticating users.
+
+Within the federated identity sphere users typically have one identity they use
+across a range of services, they have control of their own data if their IDP
+delegates that to them.
+
+I should take this moment to plug [Indiid](https://indiid.net) which is a IDP
+in the federated model where users have control of their identity.
+
+## Self soverign identity
+
+Returning to self soverign identity; in this model there is no IDP. The user
+has a digitial identity, perhaps stored on a phone, which authenticates them to
+service providers. This can only work if the service provider has something
+they can put their trust in. With self soverign identity the trust framework is
+provided by a de-centralized trust technology. Many are proposing blockchain as
+a way of providing this.
+
+You may be aware of a old technology called Pretty Good Privacy (PGP) as a
+means of establishing the true identity of a email sender. In some ways it
+helps to think of PGP as something that is pretty close to a SSI. Users control
+a set of cryptographic keys they use to sign and/or encrypt data, and they also
+control which keys they trust. It's a peer to peer model with no immediately
+apparent central authority that controls access to the technology. However,
+it's strong link to email, and therefore the domain name system, means it can
+be seen as dependant on the ICANN authority which precludes it from being an
+SSI to many.
+
+## Final thoughts
+
+There is obviously a lot more to this topic than I can do justice to in a short
+lay-persons intro, so I thought I would end with some questions to ponder:
+
+ * How can we give the users control over their identity, whilst also making the technology simple enough for them to use in a secure way? Lots of users fall foul social engineering attacks even when the authentication model is simple.
+ * Who is responsible for the persistance and/or reprovisioning of the users identity? If it's the user, how can this be made simple? If it's an organisation how can we address the central authority issue?
+ * How will the decentralised trust fabric work? There is a lot of discussion about using blockchain but what are the costs of that and who bares them?
+ * How will a users access to their own identity be protected?
+
+
+

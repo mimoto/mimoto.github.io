@@ -2,7 +2,7 @@
 layout: post
 title: "What is Self-Sovereign Identity?"
 summary: A beginner's introduction to Self-Sovereign Identity (SSI)
-date:   2020-12-02 09:00:00 +0100
+date:   2020-12-07 11:07:00 +0100
 author: sam_jones
 image: /assets/images/luis-alberto-certs.jpg
 published: true

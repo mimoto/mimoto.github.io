@@ -1,4 +1,5 @@
 ![](/assets/images/dm-full-logo.svg)
+<iframe id="dmv" style="float:right;" src="https://player.vimeo.com/video/475831251" width="533" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 Doormouse is a product which allows guests to access your wired IT network using their own devices such as laptops and
 games consoles. This helps meet the regulatory requirement for network owners to monitor and record access.
@@ -11,6 +12,11 @@ Guests are taken through a simple self-service registration process:
 
 As the network owner you retain control, with an administration panel allowing appropriate staff to track network access
  by guests.
+
+
+<br/>
+
+
 
 ## What our customers say
 
@@ -56,5 +62,7 @@ in your organisation.
 Control of user data is primarily defined by your existing identity infrastructure, so you can choose which information
 is appropriate to release to Doormouse. Doormouse also allows the user to optionally supply some additional data, but
 they can revoke permission at any time. User data retention can be configured to meet your own policy/ legal needs.
+
+
 
 [Find out more; get in touch.](/contact/)

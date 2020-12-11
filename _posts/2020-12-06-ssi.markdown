@@ -2,7 +2,7 @@
 layout: post
 title: "What is Self-Sovereign Identity?"
 summary: A beginner's introduction to Self-Sovereign Identity (SSI)
-date:   2020-12-02 09:00:00 +0100
+date:   2020-12-07 11:07:00 +0100
 author: sam_jones
 image: /assets/images/luis-alberto-certs.jpg
 published: true
@@ -16,7 +16,7 @@ published: true
 
 # Introduction
 
-In late November the Mimoto team had a virtual 'stand' at Identity week 2020.
+In late November the Mimoto team had a virtual 'stand' at [Identity week 2020](https://www.terrapinn.com/exhibition/identity-week/index.stm).
 Originally planned as a physical conference, it eventually migrated online due
 to the COVID-19 pandemic. As our first conference as exhibitors the virtual
 format made for a very different experience from meeting people in person.
@@ -49,48 +49,50 @@ It is helpful to look at Self-Soverign Identity in the context of other identity
 ## Centralized
 
 (Unfortunately) most login experiences we have are based on a centralized
-identity infrastructure. You want to use this service, first you have to
-register your details and create a set of credentials that you'll use to access
-the service. It's easy for the service provider to setup but it has a lot of
-negative affects for everyone involved: the user has _so_ many credentials, the
-service provider has a data security headache, and the whole approach fosters
-an environment where it is easy for a malicious attacker to win.
+identity infrastructure. As an example, think of the experience you've had when
+you want to buy something from an online shop. You want to use this service,
+first you have to register your details and create a set of credentials that
+you'll use to access the service. It's easy for the service provider to setup
+but it has a lot of negative affects for everyone involved: the user has _so_
+many credentials, the service provider has a data security headache, and the
+whole approach fosters an environment where it is easy for a malicious attacker
+to win.
 
 ## Open-trust
 
 This is the Google and Facebook login model. A handful of large Identity
-Providers (IDPs) grant access to a vast range of services. The users identity
-information is hosted and controlled by these giant IDPs. Differences in
+Providers (IdPs) grant access to a vast range of services. The users identity
+information is hosted and controlled by these giant IdPs. Differences in
 protocol flavours mean that service providers (SPs) can end up creating multiple
 login handlers to allow access to their site from two or more of these huge
-IDPs. The IDPs have control over which SPs can use the authentication
+IdPs. The IdPs have control over which SPs can use the authentication
 framework, and what happens to the users data. The user does have fewer
 credentials to remember however.
 
 ## Federated Trust
 
 With a federated login system, a user's identity is hosted by an Identity
-Provider (IDP) at a logical home institution for the user. They use the IDP to
-authenticate to one or more service providers (SPs). The IDP also discloses an
+Provider (IdP) at a logical home institution for the user. They use the IdP to
+authenticate to one or more service providers (SPs). The IdP also discloses an
 amount of data about the user to the SP, the level of disclosure is ultimately
-at the IDP owners discretion. To the point where access can be trusted to be
+at the IdP owners discretion. To the point where access can be trusted to be
 both anonymous and authenticated at the same time. An interesting concept when
 you think about it.
 
 With federated login systems the user doesn't interact with the federation
 directly; they're most likely not even aware of it. The federation is
-essentially a register of participating IDPs and SPs and trust data they need
-to be able to interact with each other.  The IDPs and SPs download a copy of
+essentially a register of participating IdPs and SPs and trust data they need
+to be able to interact with each other.  The IdPs and SPs download a copy of
 this register and use it to establish technical trusts between themselves
 whilst authenticating users.  Within the federated identity sphere users
 typically have one identity they use across a range of services, they have
-control of their own data if their IDP delegates that to them. Here at Mimoto
-one of our products is [Indiid](https://indiid.net), an IDP in the federated
+control of their own data if their IdP delegates that to them. Here at Mimoto
+one of our products is [Indiid](https://indiid.net), an IdP in the federated
 model where users have control of their identity.
 
 ## Self Sovereign identity
 
-Returning to self sovereign identity; in this model there is no IDP. The user
+Returning to self sovereign identity; in this model there is no IdP. The user
 has a digital identity, perhaps stored on a phone, which authenticates them to
 service providers. This can only work if the service provider has something
 they can put their trust in. With self sovereign identity the trust framework is
@@ -103,7 +105,7 @@ helps to think of PGP as something that is pretty close to a SSI. Users control
 a set of cryptographic keys they use to sign and/or encrypt data, and they also
 control which keys they trust. It's a peer to peer model with no immediately
 apparent central authority that controls access to the technology. However,
-it's strong link to email, and therefore the domain name system, means it can
+its strong link to email, and therefore the domain name system, means it can
 be seen as dependant on the ICANN authority which precludes it from being an
 SSI to many.
 

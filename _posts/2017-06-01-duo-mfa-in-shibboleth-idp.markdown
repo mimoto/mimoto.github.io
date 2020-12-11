@@ -28,21 +28,25 @@ Ultimately we're going to do 4 things ...
 First, let's make the Duo and MFA authentication flows available by modifying
  the **conf/idp.properties** file:
 
-```
+{% highlight properties %}
 #idp.authn.flows= Password
-idp.authn.flows= MFA
 
-```
+idp.authn.flows= MFA
+{% endhighlight %}
+
 Next, we'll get the various keys we need for Duo in place, in **conf/authn/duo.properties** .
 
 3 of these keys come from Duo control panel, one of them you create yourself as described here <https://duo.com/docs/duoweb#1.-generate-an-akey>.
 
-```
+{% highlight properties %}
 idp.duo.apiHost = <the api host as specified in the duo control panel >
+
 idp.duo.applicationKey = <a key you need to generate as described here: https://duo.com/docs/duoweb#1.-generate-an-akey >
+
 idp.duo.integrationKey = <you'll find this key when you setup Shibboleth IdP as an application in the Duo control panel >
+
 idp.duo.secretKey = <Again, you'll find this in the Duo control panel >
-```
+{% endhighlight %}
 
 Our 3rd step is to describe the MFA behaviour we expect in the **conf/authn/mfa-authn-config.xml** :
 

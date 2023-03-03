@@ -91,7 +91,7 @@ point of view. How are accounts like this managed? When do they get revoked? If
 there aren't good answers to these questions this kind of work-around becomes a
 security hazard.
 
-## It's common for Universityies to buy their own produce; and that's good!
+## It's common for Universities to buy their own produce; and that's good!
 
 This behaviour of treating a student like a member of staff is a part of a
 larger process. It goes like this:

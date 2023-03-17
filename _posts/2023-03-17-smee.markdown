@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "Smee: Sources, Metadata and Entities - a SAML Metadata library for Elixir"
+summary: A new open source library for handling SAML metadata
 date:   2023-03-17 14:45:00
-categories: software
-header_image: /assets/images/smee.png
-author: Pete Birkinshaw
+categories: opensource software saml
+image: /assets/images/smee.png
+author: pete_birkinshaw
+published: true
 ---
 Pete Birkinshaw, one of the Mimoto co-founders, has recently
 released [Smee](https://github.com/Digital-Identity-Labs/smee), an Open Source software library written in Elixir that

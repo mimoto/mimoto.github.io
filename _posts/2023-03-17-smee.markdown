@@ -6,16 +6,26 @@ categories: software
 header_image: /assets/images/smee.png
 author: Pete Birkinshaw
 ---
-Pete Birkinshaw, one of the Mimoto co-founders, has recently released [Smee](https://github.com/Digital-Identity-Labs/smee), an Open Source software library written in Elixir that aims to help users download and process SAML metadata.
+Pete Birkinshaw, one of the Mimoto co-founders, has recently
+released [Smee](https://github.com/Digital-Identity-Labs/smee), an Open Source software library written in Elixir that
+aims to help users download and process SAML metadata.
 
-[SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) is a widely used standard for single-sign-on even across different organisations. It's been around for ages now and is very widely used in education and research organisations.
+[SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) is a widely used standard for single-sign-on
+even across different organisations. It's been around for ages now and is very widely used in education and research
+organisations.
 
-For login services (IdPs) and authenticated websites (SPs) to work together they need to both trust each and know the technical details of how to connect and share information. This is done by exchanging metadata: XML records that act as profiles for each service.
+For login services (IdPs) and authenticated websites (SPs) to work together they need to both trust each and know the
+technical details of how to connect and share information. This is done by exchanging metadata: XML records that act as
+profiles for each service.
 
-Exchanging and installing individual server details for services might work for small organisations using Microsoft Active Directory, but it simply doesn't scale in higher education and research contexts where tens of thousands of services are available so trusted metadata is curated and distributed by national research and education organisations.
+Exchanging and installing individual server details for services might work for small organisations using Microsoft
+Active Directory, but it simply doesn't scale in higher education and research contexts where tens of thousands of
+services are available so trusted metadata is curated and distributed by national research and education organisations.
 
-Smee lets you download and process that metadata, use the information within it or create new collections of service information.
+Smee lets you download and process that metadata, use the information within it or create new collections of service
+information.
 
 Mimoto is now providing support and custom development of Smee.
 
-Smee is available at [Github](https://github.com/Digital-Identity-Labs/smee), and [Hex.pm](https://hex.pm/packages/smee). Documentation is online at <https://hexdocs.pm/smee> 
+Smee is available at [Github](https://github.com/Digital-Identity-Labs/smee), and [Hex.pm](https://hex.pm/packages/smee)
+. Documentation is online at <https://hexdocs.pm/smee> 

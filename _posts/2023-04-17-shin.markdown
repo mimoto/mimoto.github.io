@@ -10,9 +10,9 @@ published: true
 ---
 Another open source release from Pete: [Shin](https://github.com/Digital-Identity-Labs/shin),
 is an Elixir package written for using the various administration APIs provided by the
-Shibboleth IdP software.
+[Shibboleth IdP](https://www.shibboleth.net/products/) software.
 
-The Shibboleth IdP [has a variety of admin APIs](https://shibboleth.atlassian.net/wiki/spaces/IDP4/pages/1265631851/WebInterfaces)
+The Shibboleth Identity Provider [has a variety of admin APIs](https://shibboleth.atlassian.net/wiki/spaces/IDP4/pages/1265631851/WebInterfaces)
   that are frequently overlooked. For many administrators the only time they
   access the admin APIs is when using some of the tools bundled with the IdP, such as `aacli` or `mdquery`, which can
   sometimes be fiddly to use even on the same server as the IdP. Shin aims to offer the same functionality as the

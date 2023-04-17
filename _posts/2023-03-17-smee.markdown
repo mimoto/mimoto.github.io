@@ -3,7 +3,7 @@ layout: post
 title:  "Smee: Sources, Metadata and Entities - a SAML Metadata library for Elixir"
 summary: A new open source library for handling SAML metadata
 date:   2023-03-17 14:45:00
-categories: opensource software saml
+categories: opensource, software, saml
 image: /assets/images/smee.png
 author: pete_birkinshaw
 published: true

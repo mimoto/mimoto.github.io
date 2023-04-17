@@ -3,7 +3,7 @@ layout: post
 title:  "Introducing Shin, a Shibboleth IdP admin Library"
 summary: Admin tools for Shibboleth IdPs
 date:   2023-04-17 11:00:00
-categories: opensource software saml
+categories: opensource, software, saml
 image: /assets/images/shin.png
 author: pete_birkinshaw
 published: true

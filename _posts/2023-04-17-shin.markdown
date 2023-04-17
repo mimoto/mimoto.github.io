@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Introducing Shin, a Shibboleth IdP admin Library"
+summary: Admin tools for Shibboleth IdPs
+date:   2023-04-17 13:15:00
+categories: opensource software saml
+image: /assets/images/shin.png
+author: pete_birkinshaw
+published: true
+---
+Another open source release from Pete: [Shin](https://github.com/Digital-Identity-Labs/shin),
+is an Elixir package written for using the various administration APIs provided by the
+Shibboleth IdP software.
+
+The Shibboleth IdP [has a variety of admin APIs](https://shibboleth.atlassian.net/wiki/spaces/IDP4/pages/1265631851/WebInterfaces)
+  that are frequently overlooked. For many administrators the only time they
+  access the admin APIs is when using some of the tools bundled with the IdP, such as `aacli` or `mdquery`, which can
+  sometimes be fiddly to use even on the same server as the IdP. Shin aims to offer the same functionality as the
+  bundled admin scripts but as an Elixir library suitable for use in scripts and web services.
+
+The admin APIs of the Shibboleth IdP allow you to:
+
+* Look up the attributes that will be released to user for a particular user: this is incredibly useful when configuring  
+  or debugging attribute release filters and attributes.
+* Fetch metadata for SPs from the IdP itself - handy to check that the correct version is being used, or to warm metadata
+  caches.
+* Get live status metrics on things like RAM usage, number of logins, Java versions and even custom stats
+* Lock out abusive users, or remove locks.
+* Restart individual components (services) within the IdP without restarting the entire IdP - incredibly useful when making
+  changes while avoiding a service outage.
+
+Mimoto will be using Shin in some new products planned for next year but it's easy to use in small scripts too - there's
+  an example in the Github repository.
+
+Shin is available from [Hex.pm](https://hex.pm/packages/shin) with documentation online at
+[HexDocs.pm](https://hexdocs.pm/shin/readme.html). You can see
+[the Shin sourcecode at Github](https://github.com/Digital-Identity-Labs/shin).
+
+We've included a Livebook of example code so you can easily try Shin with your own Shibboleth service:
+
+[![Run in Livebook](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fraw.githubusercontent.com%2FDigital-Identity-Labs%2Fshin%2Fmain%2Fshin_notebook.livemd)
+
+(You can [get Livebook here](https://livebook.dev/#install))

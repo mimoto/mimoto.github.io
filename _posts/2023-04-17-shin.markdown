@@ -8,7 +8,7 @@ image: /assets/images/shin.png
 author: pete_birkinshaw
 published: true
 ---
-Another open source release from Pete: [Shin](https://github.com/Digital-Identity-Labs/shin)
+Another open source release from Digital Identity Labs: [Shin](https://github.com/Digital-Identity-Labs/shin)
 is an Elixir package written to access the various administration APIs provided by the
 [Shibboleth IdP](https://www.shibboleth.net/products/) software.
 

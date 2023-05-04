@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
 
-gem "therubyracer"
+#gem "therubyracer", "0.12.3"
+gem "webrick"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the

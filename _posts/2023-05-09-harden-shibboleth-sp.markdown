@@ -57,7 +57,7 @@ Shibboleth SP can be configured with some administrative HTTP endpoints configur
 
 ### The 'Status' handler
 
-If a status handler is configured, it displays information at a given status URL (normally https://host.example.org/Shibboleth.sso/Status. Some of the information displayed might be considered sensitive, so be sure to check the ACL is also configured. By default it is set to the safe value of "127.0.0.1 ::1", for example:
+If a status handler is configured, it displays information at a given status URL (normally https://host.example.org/Shibboleth.sso/Status). Some of the information displayed might be considered sensitive, so be sure to check the ACL is also configured. By default it is set to the safe value of "127.0.0.1 ::1", for example:
 
 ```
 <Handler type="Status" Location="/Status" acl="127.0.0.1 ::1" />

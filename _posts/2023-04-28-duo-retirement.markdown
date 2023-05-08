@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Duo iframe retirement; a warning to Shibboleth IdPv3 & some IdPv4 operators"
+title:  "Duo iframe retirement: a warning to Shibboleth IdPv3 and some IdPv4 operators"
 summary: Update now or your login system will break
 date:   2023-04-28 14:41:00
 categories: idp mfa

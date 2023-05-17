@@ -13,9 +13,9 @@ published: true
 
 We're pleased to announce that Mimoto has joined two more associations.
 
-Mimoto is now a member of ALT, The Association For Learning Technology, the professional body for people and
+Mimoto is now a member of ALT, [The Association For Learning Technology](https://www.alt.ac.uk/), the professional body for people and
 organisations working with technology in UK education. We've admired the work of ALT for a while and want to support
 them more directly.
 
-Mimoto has also joined The NorthWest CyberSecurity Cluster (NWCSC) as a Micro Business Member. NWCSC is a regional forum
+Mimoto has also joined [The NorthWest CyberSecurity Cluster](https://www.nwcsc.org.uk/) (NWCSC) as a Micro Business Member. NWCSC is a regional forum
 for meeting and discussing cybersecurity topics. 

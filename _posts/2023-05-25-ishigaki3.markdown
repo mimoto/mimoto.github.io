@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Joining The Association For Learning Technology and The NorthWest CyberSecurity Cluster"
+summary: "Mimoto has joined two more professional associations: ALT and NWCSC"
+date:   2023-05-17 14:21:00
+categories: news
+image: /assets/images/ishigaki.jpg
+author: pete_birkinshaw
+published: true
+---
+
+![New subscriptions](/assets/images/ishigaki.jpg)
+## Ishgaki 3.0.0
+
+A major new version of [Ishigaki](https://github.com/Digital-Identity-Labs/ishigaki) is now available on [Github](https://github.com/Digital-Identity-Labs/ishigaki/pkgs/container/ishigaki) and [Docker Hub](https://hub.docker.com/r/digitalidentity/ishigaki). Ishigaki is probably the best Shibboleth IdP base container for use with Docker, Kubernetes and other container services, and is available for both AMD64 and ARM64 platforms.
+
+Changes include:
+
+* The latest stable Shibboleth IdP release 4.3.1, Jetty 10, Debian 11 and Corretto Java 17.
+
+* Jetty logging has been improved and Jetty no longer forks on startup, saving a tiny amount of time and a significant amount of RAM.
+
+* The associated tests have been tweaked and now use Cinc Auditor.
+
+You can read more about Ishigaki on its [Github Readme](https://github.com/Digital-Identity-Labs/ishigaki/).	

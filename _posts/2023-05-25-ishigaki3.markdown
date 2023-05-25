@@ -10,7 +10,6 @@ published: true
 ---
 
 ![New subscriptions](/assets/images/ishigaki.jpg)
-## Ishgaki 3.0.0
 
 A major new version of [Ishigaki](https://github.com/Digital-Identity-Labs/ishigaki) is now available on [Github](https://github.com/Digital-Identity-Labs/ishigaki/pkgs/container/ishigaki) and [Docker Hub](https://hub.docker.com/r/digitalidentity/ishigaki). Ishigaki is probably the best Shibboleth IdP base container for use with Docker, Kubernetes and other container services, and is available for both AMD64 and ARM64 platforms.
 

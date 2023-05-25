@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Joining The Association For Learning Technology and The NorthWest CyberSecurity Cluster"
-summary: "Mimoto has joined two more professional associations: ALT and NWCSC"
-date:   2023-05-17 14:21:00
-categories: news
+title:  "Major update for Ishigaki"
+summary: "Possibly the best Shibboleth IdP container is updated"
+date:   2023-05-25 15:21:00
+categories: software
 image: /assets/images/ishigaki.jpg
 author: pete_birkinshaw
 published: true

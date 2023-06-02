@@ -7,6 +7,9 @@ summary: Many are choosing to use Duo to use a user's mobile phone as a second f
 image: /assets/insight/img/header-11.jpg
 categories: Shibboleth-IdP Duo MFA
 ---
+
+**2017 was a long time ago and a lot of things have changed since then. If you're adding Duo MFA to a Shibboleth IdP today, you should not follow this guide because it uses deprecated features that will stop working soon.**
+
 Multi-factor authentication is becoming increasingly prevalent today,
 and in our experience many are choosing to use Duo to use a user's mobile
  phone as a second factor.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Chromium's suggested 90 day certificate limit"
 summary: A positive trend to improve security will challenge traditional behaviours around server certificates.
-date:   2023-07-01 11:15:00
+date:   2023-06-07 11:15:00
 categories: certificates
 image: /assets/images/can-production-line.jpg
 author: sam_jones

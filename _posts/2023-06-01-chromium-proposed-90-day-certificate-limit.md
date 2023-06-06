@@ -69,7 +69,7 @@ shorter than 90 days, which would be a big improvement.
 
 # Implications for service owners
 
-If you're already using automated certificate renewal; none. You've already minimised the human effort required, and
+If you're already using automated certificate renewal, none. You've already minimised the human effort required, and
 will also already be using short lived certificates thus reducing the impact of compromise.
 
 However, if like a lot of organisations you still have a manual process for some or all of your certificate management

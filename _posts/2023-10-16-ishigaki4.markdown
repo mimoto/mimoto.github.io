@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Shibboleth IdP v5 in Ishigaki v4"
+summary: "Use Shibboleth IdP 5 and Jetty with Docker"
+date:   2023-10-16 15:08:00
+categories: software
+image: /assets/images/ishigaki.jpg
+author: pete_birkinshaw
+published: true
+---
+
+![Ishigaki](/assets/images/ishigaki.jpg)
+
+A major new version of [Ishigaki](https://github.com/Digital-Identity-Labs/ishigaki) is now available on
+[Github](https://github.com/Digital-Identity-Labs/ishigaki/pkgs/container/ishigaki) and
+[Docker Hub](https://hub.docker.com/r/digitalidentity/ishigaki). Ishigaki is probably the best Shibboleth IdP base 
+container for use with Docker, Kubernetes and other container services, and is available for both AMD64 and ARM64 platforms.
+
+For this release the focus has been on updating the major component parts of the container, especially the IdP itself.
+Ishigaki is now using the new Shibboleth IdP 5.0.0, Jetty 11, Debian 12 and Corretto Java 17.
+
+Mimoto can provide commercial support for Ishigaki - please get in touch if you use Ishigaki in a production-environment!
+
+You can read more about Ishigaki on its [Github Readme](https://github.com/Digital-Identity-Labs/ishigaki/).	

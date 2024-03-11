@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "What's in a name: Mimoto"
+summary: "Thoughts on Mimoto and unique identity"
+date:   2023-10-16 15:08:00
+categories: identity
+image: /assets/images/ishigaki.jpg
+author: pete_birkinshaw
+published: false
+---
+
+![Ishigaki](/assets/images/ishigaki.jpg)
+
+#Mimoto
+
+I called my first company "Digital Identity Ltd", a very literal name for a digital identity company used for consulting and contracting work. Possibly too obvious and literal.
+
+When Sam and I were setting up Mimoto in 2016 we were after a more interesting name, and picked the romanised word for official identity in Japanese.
+
+I think it reminded me of Atari. But it was also a name that stood out in the identity and security field which is awash with companies with bland names like "Digital Identity". The Japanese meaning of identity was also clearly a major plus for a company operating in the identity industry.
+
+Fast forward several years and we start to receive a series of puzzling phone calls and emails referring to our San Francisco office, our use of "AI", our vast and exciting new VC funding. None of which sounds like us: we're based in the UK, we're a remote-first organisation, we're keen to avoiding being caught up in the current AI hype-cycle although we are exploring uses for machine learning, and we're proudly self-funded and debt-free.
+
+Soon we discovered a new company in the USA, founded in 2020, that also works with security software, SSO and so on has decided that they too like the name Mimoto. Apparently, they don't mind that it was already in use in the same business area. They also picked an almost identical shade of orange as their signature colour. They seem more marketing focused than us which is snagging more attention from web scrapers. It's ironic that they've chosen a word meaning unique official identity in a context where it isn't a unique identifier.
+
+It's clearly made a confusing situation for people, leading to us receiving the odd messages. Mimoto is trademarked in the UK so they can't trade under that name in the UK. That doesn't apply to the USA, so we think there will be a degree of confusion for the foreseeable future. Maybe search engines will learn to untangle the two companies. Maybe the other Mimoto will realise the benefit of a unique identity and change their name.

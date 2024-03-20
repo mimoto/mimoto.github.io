@@ -9,7 +9,7 @@ author: pete_birkinshaw
 published: true
 ---
 
-![Ishigaki](/assets/images/ishigaki.jpg)
+![Mimoto](/assets/images/mimoto.png)
 
 # Mimoto
 
